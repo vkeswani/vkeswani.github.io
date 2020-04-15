@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>yourname</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+<style>
+* {box-sizing: border-box}
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+/* Set height of body and the document to 100% */
+body, html {
+font-family: 'Poppins', sans-serif;
+ 
+  margin: 0;
+ 
+}
+
+/* Style tab links */
+.tablink {
+  
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: bold 17px;
+  width: 16.6666666%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+ color:rgb(255, 44, 90);
+  display: none;
+  padding: 20px 20px;
+  height: 100%;
+}
+.navbar {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the bottom of the page */
+  width: 100%; /* Full width */
+ 
+}
+.navbar b{
+font-size:17px;
+}
+#Home {background-color: white;}
+#Work {background-color: white;}
+#Contact {background-color: white;}
+#About {background-color: white;}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+
+<button class="tablink" onclick="openPage('Home', this,'rgb(255, 44, 90)')" id="defaultOpen" > <b><i class="fa fa-fw fa-home"> </i><font font-size="100px"> HOME</font></b></button>
+<button class="tablink" onclick="openPage('About', this,'rgb(255, 44, 90)')"> <b> <i class="fa fa-fw fa-user"> </i> ABOUT</b></button>
+<button class="tablink" onclick="openPage('Work', this,'rgb(255, 44, 90)')"> <b> <i class="fa fa-fw fa-laptop"> </i>    PROJECTS</b></button>
+<button class="tablink" onclick="openPage('Achievements', this,'rgb(255, 44, 90)')">  <b> <i class="fa fa-fw fa-graduation-cap"> </i> ACHIEVEMENTS</b></button>
+<button class="tablink" onclick="openPage('CV', this,'rgb(255, 44, 90)')" href="https://drive.google.com/open?id=1pYKS_FvJYKc23d-BAoeb4WrVNpWSBKU4"> <b>  <i class="fa fa-fw fa-id-badge"> </i> CV</b></button>
+<button class="tablink" onclick="openPage('Contact', this,'rgb(255, 44, 90)')"> <b>  <i class="fa fa-fw fa-envelope"> </i> CONTACT</b></button>
+<!--<button class="tablink" onclick="openPage('Hobbies', this,'rgb(255, 44, 90)' )"> <b>  <i class="fa fa-fw fa-paint-brush"> </i>  HOBBIES</b></button>
+<button class="tablink" onclick="openPage('Lists', this)"><b>LISTS</b></button>-->
+</div>
+<div id="Home" class="tabcontent">
+  
+    <table id="top_part">
+        <tr>
+            <td id="about">
+
+<font  size="4px">Welcome to my webpage!</font>
+                <h1>Vishal Keswani</h1>
+		<font color="black" size="5px"><b>Data Science Enthusiast</b></font>
+		 
+                <table>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:0.2s;"><a href="http://www.linkedin.com/in/vishalkeswani97" target="_blank" class="social"><i class="fab fa-linkedin"></i></a></td>   
+			<td class="animated zoomIn" style="animation-delay:0.4s;"><a href="https://github.com/vkeswani" target="_blank" class="social"><i class="fab fa-github"></i></a></td>                     
+                        <td class="animated zoomIn" style="animation-delay:0.6s;"><a href="https://www.instagram.com/vishal_k97_/" target="_blank" class="social"><i class="fab fa-instagram"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:0.8s;"><a href="https://www.facebook.com/vishal.keswani.777" target="_blank" class="social"><i class="fab fa-facebook"></i></a></td>
+			 <!--<td class="animated zoomIn" style="animation-delay:1.8s;"><a class="social"><i class="fab fa-dribbble"></i></a></td>
+			<td class="animated zoomIn" style="animation-delay:1.4s;"><a class="social"><i class="fab fa-twitter"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.0s;"><a class="social"><i class="fab fa-medium"></i></a></td>-->
+                    </tr>
+                </table>          
+            </td>
+            <td id="rightImage"><img src="download.png"><div><font color="white"> <b> I hear and I forget. I see and I remember. I do and I understand.</b> ~ Confucius</font></div>             </td>
+        </tr>
+    </table>
+
+</div>
+
+<div id="Work" class="tabcontent">
+<table style="width:100%">
+<tr>
+<td style="width:1%"></td>
+<td style="width:50%">
+<div><font color="white">get down bitch</font></div>
+<div><font color="white">get down bitch</font></div>
+<div><font color="white">get down bitch</font></div>
+<div>
+<div><font color="black" size="5px"><b>INTERNSHIP PROJECTS</b></font></div>
+<font color="black">Click to view description.</font>
+<div><font color="white">get down bitch</font></div>
+<div><font color="white">get down bitch</font></div>
+<div class="container right">
+    <div class="content">
+     <button class="accordion1" ><font color="black">Nokia Solutions & Networks, India </font></button>
+    </div>
+  </div>
+<div class="container right">
+    <div class="content">
+     <button class="accordion" >QnA suggestion </button>
+<div class="panel">
+  <p align="justify"><font color="black">Obtained word documents containing the chat threads between the clients and the care engineers (CE). Extracted e-mail bodies to csv, followed by tokenization, removal of stop words, stemming and lower casing. Used keyword search to create ’queries and CE questions repository’, mapped the two with each other. Vectorized each row using tf-idf scores, utilized for calculation of cosine-similarity measure. Performed k-means and k-medoids on client queries; for a new query, found the order of similar centroids. Reported inquiry questions for first 3 clusters (based on mapping) in decreasing order of similarity.</font></p>
+</div>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <button class="accordion" >Anomaly detection in event logs</button>
+<div class="panel">
+  <p align="justify"><font color="black">Assigned case ids to telecommunication log data (stream of unlabelled events) using an iterative EM procedure (Ferreira, 2009). Discovered process using alpha and inductive miner, the resulting petri net revealed a Spaghetti process. Performed conformance checking and classified event types as anomalous based on aggregate trace fitness score for different thresholds and submitted results for approval by domain expert.</font></p>
+</div>
+    </div>
+  </div>
+<div class="container right">
+    <div class="content">
+     <button class="accordion1" ><font color="black">SURGE, IIT Kanpur</font> </button>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+     <button class="accordion" >Web game for decision analysis</button>
+<div class="panel">
+  <p align="justify"><font color="black">Designed a web-based betting game-cum-experiment using HTML, CSS, JavaScript consisting of 4 types of trials corresponding to low and high cognitive sample size in the two settings (hedonic and utilitarian). Used the Logistic function to simulate outcomes of bets, applied Box-Muller method to generate a Random Gaussian sample used to calculate percentile of players based on total amount after every bet. Computed mean reaction times and performed outlier detection using IQR method in MATLAB, utilitarian choices seem to converge for both sample sizes while hedonic ones diverge from each other.</font></p>
+</div>
+    </div>
+  </div>
+</div>
+
+</td>
+
+<td style="width:50%">
+<div><font color="white">get down bitch</font></div>
+<div><font color="white">get down bitch</font></div>
+<div><font color="white">get down bitch</font></div>
+<div>
+<div><font color="black" size="5px"><b>RESEARCH PROJECTS</b></font></div>
+<font color="black">Click to view description.</font>
+<div><font color="white">get down bitch</font></div>
+<div><font color="white">get down bitch</font></div>
+  <div class="container right">
+    <div class="content">
+     <button class="accordion" >Emotion analysis of memes</button>
+<div class="panel">
+  <p align="justify"><font color="black">Obtained memes annotated by organizers having both text and image modalities. Implemeted CNN (image-only) and ANN (text-only), combined using SVM, RF and Neural Network. Fine-tuned BERT (text-only) and Multimodal Bitransformer (text+image). Also used Naive Bayes (text-only). ANN+Word2vec perfomred best, beat baseline Macro-F1 by 63% for the sentiment analysis task under Memotion Analysis (Task 8, SemEval'2020)</font>.</p>
+</div>
+      
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+     <button class="accordion" >Product recommendation system</button>
+<div class="panel">
+  <p align="justify"><font color="black">Explored different algorithms from the extreme multi-label classification repository (manikvarma.org). Parabel, PfastreXML and FastXML were the top picks based on performance on most evaluation metrics. Trained the three on a dataset of 10k users, represented by ~16k features, with ~3k labels of interest. FastXML performed overall best with model size 1.42mb, prec@1 80.4% & prec@3 49.7% on test dataset.</font></p>
+</div>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+     <button class="accordion" >Tradewar sentiment analysis</button>
+<div class="panel">
+  <p align="justify"><font color="black">Extracted twitter data (~10m tweets) filtered by keyword ‘tradewar’ from Jan 2018 (beginning of US-China trade war). Performed data preprocessing - lowercasing, removing stop words etc, & replacing emoticons with words. Trained Naive Bayes, Maximum Entropy and Decision Tree classifiers. Naive Bayes gave the best accuracy (~74%) and least training time on sample. Classified tweets as positive/negative, classification probabilities gave a polarity score for each tweet. Aggregated polarity scores to get daily trend, hence, constructed a subjective proxy for policy decisions.</font></p>
+</div>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <button class="accordion" >ARIMA vs LSTM: Forecasting GDP</button>
+<div class="panel">
+  <p align="justify"><font color="black">Obtained seasonally adjusted real US GDP (quarterly) from the U.S. Bureau of Economic Analysis. Autocorrelation function, Dickey-Fuller & Phillips-Perron tests supported first differencing for stationariy. Used 9:1 train-test split due to high prediction time and walk-forward validation (rolling forecasts). Used MSE for tuning and model evaluation, ARIMA(1,1,1) performed best among econometric models. LSTM showed ~23% reduction in test MSE with 2 neurons & 18% with just 1 (batch-size = 1, epochs = 10).</font></p>
+</div>
+    </div>
+  </div>
+
+  <div class="container right">
+    <div class="content">
+     <button class="accordion" >PCA and NMF for Image Analysis</button>
+<div class="panel">
+  <p align="justify"><font color="black">Implemented PCA & NMF from scratch, performed dimensionality reduction on MNIST digits for K=2,3. Plotted transformed data in 2D and 3D, basis vectors and reconstructed samples for the two cases. Used NMF for image classification and obtained an accuracy of around ~80% on test data for K=3.</font></p>
+</div>
+    </div>
+  </div>
+  
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <div id="bio">
+        <h1>Contact</h1>
+           
+                            <table id="inner_table" font-size="10px">
+                                <tr>
+                                    <td><i class="fas fa-phone"></i> &nbsp; +91 8741 867 137</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-at"></i> &nbsp; vkeswani@gmail.com</td>
+                                </tr>
+                                 <tr>
+                                    <td><i class="fab fa-google"></i> &nbsp; keswanivishal1997@gmail.com</td>
+                                </tr>
+ <tr>
+                                    <td><i class="fab fa-linkedin"></i> &nbsp; <a href="http://www.linkedin.com/in/vishalkeswani97" target="_blank">LinkedIn</a></td>
+                                </tr>
+ <tr>
+                                    <td><i class="fab fa-facebook"></i> &nbsp; <a href="https://www.facebook.com/vishal.keswani.777" target="_blank">Facebook</a></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-map-marker-alt"></i>
+                                    <div id="address">
+                                        Room A309, Hall 1<br>
+                                        IIT Kanpur, India
+                                    </div>
+                                    </td>
+                                </tr>
+                               <!-- <tr>
+                                    <td>
+                                        <a class="social"><i class="fab fa-facebook"></i></a>
+                                        <a class="social"><i class="fab fa-twitter"></i></a>
+                                        <a class="social"><i class="fab fa-instagram"></i></a>
+                                        <a class="social"><i class="fab fa-dribbble"></i></a>
+                                        <a class="social"><i class="fab fa-medium"></i></a>
+                                    </td>
+                                </tr>-->
+                            </table>
+                       
+    </div>
+</div>
+
+<div id="About" class="tabcontent">
+ <div id="bio" align="justify">
+        <h1>About me</h1>
+        <font color="black" size="5%">
+          <p> Hi, I am Vishal. I am a senior undergraduate at IIT Kanpur. I am pusuing minors in Machine Learning and Computer Systems. I work in the fields of Natural Language Processing, Machine Learning and Econometrics. I aspire to make a career in the same and have done many relevant courses. My projects have been in sentiment analysis, recommendation systems, image processing, matrix factorization, time series forecasting etc. If you want to collaborate with me, please visit the Contact section. </font></p>
+<p> <font color="black" size="5%">
+I have worked in Python, MATLAB, R, C and C++ based on course and project requirements. I am also familiar with web technologies including HTML, CSS, JavaScript and SQL. I have used python packages including Pytorch, Pm4Py, NumPy, Pandas, Nltk, Keras, TextBlob, ScikitLearn etc. I am comfortable with both Linux and Windows and did a course in bash scripting. 
+ </font>
+   </p>  
+<p> <font color="black" size="5%">
+I recently took part in Memotion Analysis, a challenge organized under SemEval'2020 International Workshop. It involved multimodal emotion analysis of internet memes having both text and image modalities. I stood first in the task concerned with sentiment classification of internet memes, improving on the baselines by 63%. The publication will arrive soon.
+ </font>
+   </p>    
+    </div>
+</div>
+<div id="CV" class="tabcontent">
+ <table><tr><td><div id="bio1">
+        <h1>2 Page CV</h1>
+<a href="https://drive.google.com/open?id=1usMXyoAK_xnZwtU_NrI-ccNua1PRBWI3" target="_blank">Drive link</a>
+<embed src="2pageCV_Vishal_Keswani.pdf#fit=1&toolbar=1&navpanes=1&scrollbar=1" type="application/pdf" width="100%" height="500px"  />
+      
+    </div></td><td>
+ <div id="bio1">
+        <h1>4 Page CV</h1>
+<a href="https://drive.google.com/open?id=1LWiR8pfRoDeFGNAU1rGOVwy49CviGJ6q" target="_blank">Drive link</a>
+<embed src="4pageCV_Vishal_Keswani.pdf" type="application/pdf" width="100%" height="500px"  />
+
+    </div></td></tr></table>
+</div>
+<div id="Achievements" class="tabcontent">
+ <div id="bio" style="height:30%">
+        <h1>Academics</h1>
+        <font color="black" size="5%">
+<ul x>
+  <li>Stood 1 st in Task A of Memotion Analysis under SemEval-2020 International Workshop</li>
+  <li>Received Commendation Certificate for excellent performance under SURGE’2018 program</li>
+  <li>Bagged the Best Staff’s Pick Project Award in the course TA201A in a batch of 380</li>
+ <li>Ranked among top 1.1% out of 0.2 million students in JEE Advanced 2016 with City Rank 2</li>
+  <li>Secured AIR 538 in JEE Mains 2016 out of 1.5 million candidates with City Rank 1</li>
+  <li>Received Certificate of Merit for position in the top 1.5% of K.V.S. students in C.B.S.E. examination</li>
+</ul></font>
+         
+    </div>
+ <div id="bio2">
+        <h1>Extra-curriculars</h1>
+        <font color="black" size="5%"><ul>
+  <li>Secured 1st position in British Parliamentary Debate in Galaxy'2017 (Inter-pool cultural fest of IITK)</li>
+  <li>Became School Captain of Kendriya Vidyalaya 1, Ajmer, also won Best Student award</li>
+  <li>Best Speaker from region in Youth Parliament Competition'2013-14 at Zonal level (5 zones in India)</li>
+ <li>Captained School Cricket Team and won Fair-Play award in an open cricket tournament</li>
+  <li>Stood in top 150 in Tata Building India Essay Competition among 2 million participants, twice</li>
+</ul></font>
+         
+    </div>
+</div>
+
+    <div id="Hobbies" class="tabcontent">
+        <h1>work</h1>
+        <div id="photos">
+            <table width="100%"><tr><img onclick="magnify($(this).attr('src'))" src="43.jpg#w=1000&q=100"></tr>
+            <tr><img onclick="magnify($(this).attr('src'))" src="40.jpg#w=967&q=80">
+            <img onclick="magnify($(this).attr('src'))" src="41.jpg#w=967&q=80">
+            <img onclick="magnify($(this).attr('src'))" src="42.jpg#w=650&q=80"></tr></table>
+
+         
+        </div>
+    </div>
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+function openPage(pageName, elmnt, color) {
+  // Hide all elements with class="tabcontent" by default */
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Remove the background color of all tablinks/buttons
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  // Show the specific tab content
+  document.getElementById(pageName).style.display = "block";
+
+  // Add the specific color to the button used to open the tab content
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
