@@ -97,11 +97,12 @@ body {
     background:rgb(255, 44, 90);
 }
 #rightImage {
-    width:90%;
-    height:95vh;
-    background:linear-gradient(0deg,rgba(255, 44, 90, 0.7),rgba(2255, 44, 90, 0.7)),url("download.png") center center;
+    width: 150vw;
+    height: 90vh;
+    overflow-x:hidden;
+    background:linear-gradient(0deg,rgba(255, 44, 90, 0.7),rgba(255, 44, 90, 0.7)),url("download.png") center center;
     background-size:cover;
-    background-repeat:no-repeat;
+    /*background-repeat:no-repeat;*/
 }
 #work {
     width:84% !important;
