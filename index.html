@@ -53,7 +53,7 @@ font-family: 'Poppins', sans-serif;
   color: white;
   float: left;
   cursor: pointer;
-  padding: 1vw 1vw;
+  padding: 1vw 1vh;
   /*font-size: bold 50vw;*/
   width: 16.666%;
   border: ;
@@ -87,7 +87,7 @@ font-family: 'Poppins', sans-serif;
  
 }
 .navbar b{
-font-size:1.3vw;
+font-size: min(2.5vh,1.9vw);
 }
 #Home {background:linear-gradient(0deg,rgba(0, 0, 0, 1),var(--rgba),white);}
 #Work {background:linear-gradient(0deg,rgba(0, 0, 0, 1),var(--rgba),white);}
@@ -154,10 +154,9 @@ font-size:1.3vw;
   </div>
   <div class="container right">
     <div class="content">
-     <button class="accordion" >Object and Face detection in TFLite</button>
+     <button class="accordion" >Object and Face detection</button>
 <div class="panel">
-  <p align="justify"><font color="black">Streamlined the pipeline: converting raw images to tfrecords, training, conversion of checkpoints to tflite format. Customized Object detection (COCO dataset) and Face Detection (Open Images dataset) for Raspberry Pi 4. Trained quantized MobileNet V2 on LFW dataset & user faces, obtained Face Recognition accuracy upto 93%. Linked face detection and recognition systems, used frame-averaging and thresholding for robust predictions.
-</font></p>
+  <p>Streamlined the pipeline: converting raw images to tfrecords, training, conversion of checkpoints to tflite format. Customized Object detection (COCO dataset) and Face Detection (Open Images dataset) for Raspberry Pi 4. Trained quantized MobileNet V2 on LFW dataset & user faces, obtained Face Recognition accuracy upto 93%. Linked face detection and recognition systems, used frame-averaging and thresholding for robust predictions.</p>
 </div>
     </div>
   </div>
@@ -170,7 +169,7 @@ font-size:1.3vw;
     <div class="content">
      <button class="accordion" >QnA suggestion </button>
 <div class="panel">
-  <p align="justify"><font color="black">Obtained word documents containing the chat threads between the clients and the care engineers (CE). Extracted e-mail bodies to csv, followed by tokenization, removal of stop words, stemming and lower casing. Used keyword search to create ’queries and CE questions repository’, mapped the two with each other. Vectorized each row using tf-idf scores, utilized for calculation of cosine-similarity measure. Performed k-means and k-medoids on client queries; for a new query, found the order of similar centroids. Reported inquiry questions for first 3 clusters (based on mapping) in decreasing order of similarity.</font></p>
+  <p>Obtained word documents containing the chat threads between the clients and the care engineers (CE). Extracted e-mail bodies to csv, followed by tokenization, removal of stop words, stemming and lower casing. Used keyword search to create ’queries and CE questions repository’, mapped the two with each other. Vectorized each row using tf-idf scores, utilized for calculation of cosine-similarity measure. Performed k-means and k-medoids on client queries; for a new query, found the order of similar centroids. Reported inquiry questions for first 3 clusters (based on mapping) in decreasing order of similarity.</p>
 </div>
     </div>
   </div>
@@ -191,7 +190,7 @@ font-size:1.3vw;
     <div class="content">
      <button class="accordion" >Web game for decision analysis</button>
 <div class="panel">
-  <p align="justify"><font color="black">Designed a web-based betting game-cum-experiment using HTML, CSS, JavaScript consisting of 4 types of trials corresponding to low and high cognitive sample size in the two settings (hedonic and utilitarian). Used the Logistic function to simulate outcomes of bets, applied Box-Muller method to generate a Random Gaussian sample used to calculate percentile of players based on total amount after every bet. Computed mean reaction times and performed outlier detection using IQR method in MATLAB, utilitarian choices seem to converge for both sample sizes while hedonic ones diverge from each other.</font></p>
+  <p>Designed a web-based betting game-cum-experiment using HTML, CSS, JavaScript consisting of 4 types of trials corresponding to low and high cognitive sample size in the two settings (hedonic and utilitarian). Used the Logistic function to simulate outcomes of bets, applied Box-Muller method to generate a Random Gaussian sample used to calculate percentile of players based on total amount after every bet. Computed mean reaction times and performed outlier detection using IQR method in MATLAB, utilitarian choices seem to converge for both sample sizes while hedonic ones diverge from each other.</p>
 </div>
     </div>
   </div>
@@ -208,7 +207,7 @@ font-size:1.3vw;
     <div class="content">
      <button class="accordion" >Hypernym Detection in Finance</button>
 <div class="panel">
-  <p align="justify"><font color="black">Used Word2vec word-embeddings trained on corpus from scratch and pre-trained BERT word-embeddings. Classified embeddings using distance metrics (L2, L1), cosine-similarity and simple classifiers (Logistic, Naïve Bayes). Word2vec with Naïve Bayes & BERT with Logistic Regression gave best test accuracy of 88% & mean rank 1.2 (FinSim'2020 shared task)</font>.</p>
+  <p>Used Word2vec word-embeddings trained on corpus from scratch and pre-trained BERT word-embeddings. Classified embeddings using distance metrics (L2, L1), cosine-similarity and simple classifiers (Logistic, Naïve Bayes). Word2vec with Naïve Bayes & BERT with Logistic Regression gave best test accuracy of 88% & mean rank 1.2 (FinSim'2020 shared task).</p>
 </div>
       
     </div>
@@ -217,16 +216,16 @@ font-size:1.3vw;
     <div class="content">
      <button class="accordion" >Emotion analysis of memes</button>
 <div class="panel">
-  <p align="justify"><font color="black">Obtained memes annotated by organizers having both text and image modalities. Implemeted CNN (image-only) and ANN (text-only), combined using SVM, RF and Neural Network. Fine-tuned BERT (text-only) and Multimodal Bitransformer (text+image). Also used Naive Bayes (text-only). ANN+Word2vec perfomred best, beat baseline Macro-F1 by 63% for the sentiment analysis task under Memotion Analysis (Task 8, SemEval'2020)</font>.</p>
+  <p>Obtained memes annotated by organizers having both text and image modalities. Implemeted CNN (image-only) and ANN (text-only), combined using SVM, RF and Neural Network. Fine-tuned BERT (text-only) and Multimodal Bitransformer (text+image). Also used Naive Bayes (text-only). ANN+Word2vec perfomred best, beat baseline Macro-F1 by 63% for the sentiment analysis task under Memotion Analysis (Task 8, SemEval'2020).</p>
 </div>
       
     </div>
   </div>
   <div class="container right">
     <div class="content">
-     <button class="accordion" >Product recommendation system</button>
+     <button class="accordion" >Recommendation system</button>
 <div class="panel">
-  <p align="justify"><font color="black">Explored different algorithms from the extreme multi-label classification repository (manikvarma.org). Parabel, PfastreXML and FastXML were the top picks based on performance on most evaluation metrics. Trained the three on a dataset of 10k users, represented by ~16k features, with ~3k labels of interest. FastXML performed overall best with model size 1.42mb, prec@1 80.4% & prec@3 49.7% on test dataset.</font></p>
+  <p>Explored different algorithms from the extreme multi-label classification repository (manikvarma.org). Parabel, PfastreXML and FastXML were the top picks based on performance on most evaluation metrics. Trained the three on a dataset of 10k users, represented by ~16k features, with ~3k labels of interest. FastXML performed overall best with model size 1.42mb, prec@1 80.4% & prec@3 49.7% on test dataset.</p>
 </div>
     </div>
   </div>
@@ -234,7 +233,7 @@ font-size:1.3vw;
     <div class="content">
      <button class="accordion" >Tradewar sentiment analysis</button>
 <div class="panel">
-  <p align="justify"><font color="black">Extracted twitter data (~10m tweets) filtered by keyword ‘tradewar’ from Jan 2018 (beginning of US-China trade war). Performed data preprocessing - lowercasing, removing stop words etc, & replacing emoticons with words. Trained Naive Bayes, Maximum Entropy and Decision Tree classifiers. Naive Bayes gave the best accuracy (~74%) and least training time on sample. Classified tweets as positive/negative, classification probabilities gave a polarity score for each tweet. Aggregated polarity scores to get daily trend, hence, constructed a subjective proxy for policy decisions.</font></p>
+  <p>Extracted twitter data (~10m tweets) filtered by keyword ‘tradewar’ from Jan 2018 (beginning of US-China trade war). Performed data preprocessing - lowercasing, removing stop words etc, & replacing emoticons with words. Trained Naive Bayes, Maximum Entropy and Decision Tree classifiers. Naive Bayes gave the best accuracy (~74%) and least training time on sample. Classified tweets as positive/negative, classification probabilities gave a polarity score for each tweet. Aggregated polarity scores to get daily trend, hence, constructed a subjective proxy for policy decisions.</p>
 </div>
     </div>
   </div>
@@ -242,7 +241,7 @@ font-size:1.3vw;
     <div class="content">
       <button class="accordion" >Time Series Forecasting</button>
 <div class="panel">
-  <p align="justify"><font color="black">Obtained seasonally adjusted real US GDP (quarterly) from the U.S. Bureau of Economic Analysis. Autocorrelation function, Dickey-Fuller & Phillips-Perron tests supported first differencing for stationariy. Used 9:1 train-test split due to high prediction time and walk-forward validation (rolling forecasts). Used MSE for tuning and model evaluation, ARIMA(1,1,1) performed best among econometric models. LSTM showed ~23% reduction in test MSE with 2 neurons & 18% with just 1 (batch-size = 1, epochs = 10).</font></p>
+  <p>Obtained seasonally adjusted real US GDP (quarterly) from the U.S. Bureau of Economic Analysis. Autocorrelation function, Dickey-Fuller & Phillips-Perron tests supported first differencing for stationariy. Used 9:1 train-test split due to high prediction time and walk-forward validation (rolling forecasts). Used MSE for tuning and model evaluation, ARIMA(1,1,1) performed best among econometric models. LSTM showed ~23% reduction in test MSE with 2 neurons & 18% with just 1 (batch-size = 1, epochs = 10).</p>
 </div>
     </div>
   </div>
@@ -251,7 +250,7 @@ font-size:1.3vw;
     <div class="content">
      <button class="accordion" >Matrix Factorisation on MNIST</button>
 <div class="panel">
-  <p align="justify" ><font color="black">Implemented PCA & NMF from scratch, performed dimensionality reduction on MNIST digits for K=2,3. Plotted transformed data in 2D and 3D, basis vectors and reconstructed samples for the two cases. Used NMF for image classification and obtained an accuracy of around ~80% on test data for K=3.</font></p>
+  <p>Implemented PCA & NMF from scratch, performed dimensionality reduction on MNIST digits for K=2,3. Plotted transformed data in 2D and 3D, basis vectors and reconstructed samples for the two cases. Used NMF for image classification and obtained an accuracy of around ~80% on test data for K=3.</p>
 </div>
     </div>
   </div>
@@ -302,9 +301,9 @@ font-size:1.3vw;
  <div id="bio" align=justify>
         <h1 style="font-family: Tahoma, sans-serif;">About me</h1>
         <font color="black" >
-          <p padding-left='10vw'> Hi, I am Vishal. I am a dual degree student at IIT Kanpur. I have a minor degree in Machine Learning. I work in the fields of Natural Language Processing, Machine Learning and Econometrics. I aspire to make a career in the same and have done many relevant projects and courses. My projects have been in Sentiment Analysis, Recommendation Systems, Image Processing, Matrix Factorization, Time Series forecasting etc. If you want to collaborate with me, please visit the Contact section. </font></p>
+          <p padding-left='10vw'> Hi, I am Vishal. I am a dual degree student at <b>IIT Kanpur</b>. I have a minor degree in <b>Machine Learning</b>. I work in the fields of <b>Natural Language Processing</b>, Machine Learning and Econometrics. I aspire to make a career in the same and have done many relevant projects and courses. My projects have been in Sentiment Analysis, Recommendation Systems, Image Processing, Matrix Factorization, Time Series forecasting etc. If you want to collaborate with me, please visit the Contact section. </font></p>
 <p> <font color="black" >
-I have worked in Python, MATLAB, R, C and C++ depending on the course and project requirements. I am also familiar with web technologies, including HTML, CSS, JavaScript and SQL. I have used many python packages including TensorFlow, Pytorch, Pm4Py, NumPy, Pandas, Nltk, Keras, TextBlob, ScikitLearn etc. I am comfortable with both Linux and Windows and did a course in bash scripting. 
+I have worked in <b>Python</b>, MATLAB, R, C and C++ depending on the course and project requirements. I am also familiar with web technologies, including HTML, CSS, JavaScript and SQL. I have used many python packages including <b>TensorFlow</b>, <b>Pytorch</b>, Pm4Py, NumPy, Pandas, Nltk, Keras, TextBlob, ScikitLearn etc. I am comfortable with both Linux and Windows and did a course in bash scripting. 
  </font>
    </p>  
 <p> <font color="black" >
@@ -329,27 +328,27 @@ I took part in international challenges under <b>SemEval-2020</b> and <b>FinNLP-
 </div>
 <div id="Achievements" class="tabcontent">
  <div id="bio2">
-        <h1 style="font-family: Tahoma, sans-serif;">Academics</h1>
+        <h1 style="font-family: Tahoma, sans-serif;align:justify">Academics</h1>
         <font color="black" >
 <ul x>
-  <li>Ranked 1st in the FinSim Shared Task under FinNLP-2020 International Workshop</li>
-  <li>Stood 1st in Task A of Memotion Analysis under SemEval-2020 International Workshop</li>	
-  <li>Received Commendation Certificate for excellent performance under SURGE’2018 program</li>
-  <li>Bagged the Best Staff’s Pick Project Award in the course TA201A in a batch of 380</li>
- <li>Ranked among top 1.1% out of 0.2 million students in JEE Advanced 2016 with City Rank 2</li>
-  <li>Secured AIR 538 in JEE Mains 2016 out of 1.5 million candidates with City Rank 1</li>
-  <li>Received Certificate of Merit for position in the top 1.5% of K.V.S. students in C.B.S.E. examination</li>
+  <li><b>Ranked 1st</b> in the FinSim Shared Task organised under <b>FinNLP-2020</b> International Workshop</li>
+  <li><b>Stood 1st</b> in Task A of Memotion Analysis organised under <b>SemEval-2020</b> International Workshop</li>	
+  <li>Received <b>Commendation Certificate</b> for excellent performance under the <b>SURGE’2018</b> program </li>
+  <li>Bagged the <b>Best Staff’s Pick Project Award</b> in the Technical Arts course in a batch of 380</li>
+ <li>Ranked in <b>top 0.05%</b> in JEE Mains (City Rank 1) and <b>top 0.15%</b> in JEE Advanced (City Rank 2)</li>
+  <!--<li>Secured AIR 538 in JEE Mains 2016 out of 1.5 million candidates with City Rank 1</li>-->
+  <li>Received <b>Certificate of Merit</b> from K.V.S. for standing in the <b>top 1.5%</b> in C.B.S.E. examination</li>
 </ul></font>
          
     </div>
  <div id="bio3">
-        <h1 style="font-family: Tahoma, sans-serif;">Extra-curriculars</h1>
+        <h1 style="font-family: Tahoma, sans-serif;align:justify">Extra-curriculars</h1>
         <font color="black" ><ul>
-  <li>Secured 1st position in British Parliamentary Debate in Galaxy'2017 (Inter-pool cultural fest of IITK)</li>
-  <li>Became School Captain of Kendriya Vidyalaya 1, Ajmer, also won Best Student award</li>
-  <li>Best Speaker from region in Youth Parliament Competition'2013-14 at Zonal level (5 zones in India)</li>
- <li>Captained School Cricket Team and won Fair-Play award in an open cricket tournament</li>
-  <li>Stood in top 150 in Tata Building India Essay Competition among 2 million participants, twice in 2010-11 & 11-12</li>
+  <li>Secured the <b>1st position</b> in <b>British Parliamentary Debate</b> in Galaxy'2017 (Inter-pool cultural fest of IITK)</li>
+  <li>Became <b>School Captain</b> of Kendriya Vidyalaya 1, Ajmer, also won <b>Best Student Award</b> in 12th standard</li>
+  <li><b>Best Speaker</b> from region in <b>Youth Parliament Competition</b>'2013-14 at the Zonal level (5 zones in India)</li>
+  <li><b>Captained</b> School Cricket Team of E.P.S. Ajmer and won <b>Fair-Play Award</b> in an open cricket tournament</li>
+  <li>Stood in <b>top 150</b> in Tata Building India Essay Competition among <b>2 million participants</b> in 2010-11 & 11-12</li>
 </ul></font>
          
     </div>
@@ -421,7 +420,12 @@ function openPage(pageName, elmnt, color) {
 document.getElementById("defaultOpen").click();
 var acc = document.getElementsByClassName("accordion");
 var i;
-
+function min(a,b){
+   if (screen.width<screen.height){
+    return b;
+   }
+   return a;
+}
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     /* Toggle between adding and removing the "active" class,
