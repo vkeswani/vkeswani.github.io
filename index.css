@@ -59,7 +59,7 @@ body {
 #about h1 {
     font-size:min(8vh,5vw);
     font-family: Tahoma, sans-serif;
-    color: white;
+    color: black;
     word-wrap:break-word;
     text-shadow: 4px 4px 8px #000000;
     line-height: 4vw;
@@ -74,7 +74,8 @@ body {
     
 }
 .social {
-    color:rgb(255, 255, 255);
+    color:black;
+    rgb(255, 255, 255);
     font-size:min(5vh,2.5vw);
     padding:0.4vw 1vw;
     border-radius:100%;
