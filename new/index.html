@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <met http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vishal Keswani</title>
+    <link rel="shortcut icon" type="image/jpg" href="vk4.jpg"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+<style>
+/* Set height of body and the document to 100% */
+
+/*button.tablink {
+  /*background-color: lightgrey;
+  padding: 20px;
+}
+
+@media screen and (min-width: 601px) {
+  button.tablink {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  button.tablink {
+    font-size: 30px;
+  }
+}*/
+/* Style tab links */
+
+
+/*#Home {background:linear-gradient(0deg,rgba(0, 0, 0, 1),var(--rgba),white);}
+#Work {background:linear-gradient(0deg,rgba(0, 0, 0, 1),var(--rgba),white);}
+#CV {background:linear-gradient(0deg,rgba(0, 0, 0, 1),var(--rgba),white);}
+#Achievements {background:linear-gradient(0deg,var(--rgba),white,white);}
+#Contact {background:linear-gradient(0deg,var(--rgba),white,white);}
+#About {background:linear-gradient(0deg,var(--rgba),white,white);}*/
+ 
+</style>
+</head>
+<body>
+
+<div class="foot">
+    <!-- <p style="animation-delay:0.0s;"><a href="mailto:keswanivishal1997@gmail.com"          target="_blank" class="social"><i class="fas fa-envelope"></i></a></p>
+    <p style="animation-delay:0.2s;"><a href="http://www.linkedin.com/in/vishalkeswani97"  target="_blank" class="social"><i class="fab fa-linkedin"></i></a></p>
+    <p style="animation-delay:0.4s;"><a href="https://github.com/vkeswani"                 target="_blank" class="social"><i class="fab fa-github"  ></i></a></p>
+    <p style="animation-delay:0.6s;"><a href="https://twitter.com/vkeswani_"               target="_blank" class="social"><i class="fab fa-twitter" ></i></a></p>  
+    <p style="animation-delay:0.8s;"><a href="https://www.facebook.com/vishal.keswani.777" target="_blank" class="social"><i class="fab fa-facebook"></i></a></p>
+    -->
+    <p>
+    <button id='leftb' onclick="prev()">&laquo;</button><a style="padding-left: 19vw;"> </a>
+    <a href="mailto:keswanivishal1997@gmail.com"          target="_blank" class="social"><i class="fas fa-envelope"></i></a>
+      &nbsp&nbsp<a href="http://www.linkedin.com/in/vishalkeswani97"  target="_blank" class="social"><i class="fab fa-linkedin"></i></a>
+      &nbsp&nbsp<a href="https://github.com/vkeswani"                 target="_blank" class="social"><i class="fab fa-github"  ></i></a>
+      &nbsp&nbsp<a href="https://scholar.google.com/citations?hl=en&user=DResnBUAAAAJ"   target="_blank" class="social1"><i class="fas fa-graduation-cap" ></i></a>
+      <!--<a href="https://twitter.com/vkeswani_"               target="_blank" class="social"><i class="fab fa-twitter" ></i></a>  
+      <a href="https://www.facebook.com/vishal.keswani.777" target="_blank" class="social"><i class="fab fa-facebook"></i></a>-->
+      <a style="padding-left: 19vw;"> </a><button id='rightb' onclick="next()" >&raquo;</button>
+  </p>
+    <!--<td class="animated zoomIn" style="animation-delay:0.6s;"><a href="https://www.instagram.com/vishal_k97_/" target="_blank" class="social"><i class="fab fa-instagram"></i></a></td>
+    <td class="animated zoomIn" style="animation-delay:1.8s;"><a class="social"><i class="fab fa-dribbble"></i></a></td>
+    <td class="animated zoomIn" style="animation-delay:1.4s;"><a class="social"><i class="fab fa-twitter"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.0s;"><a class="social"><i class="fab fa-medium"></i></a></td>-->            
+</div>
+
+<!-- <div class="foot">
+   <div class="no-box">
+      <span class="no">1</span>
+  </div> 
+  <button class="social" onclick="prev()">&laquo;</button>
+  <button class="social" onclick="next()">&raquo;</button>
+</div>  -->
+
+<div id="myNav0" class="overlay">
+  <div class="overlay-content" onclick="closeNav(0)">
+      <a class="closebtn" onclick="closeNav(0)">&times;</a>
+      <ul>
+        <a onclick="openPage('About', this,'var(--rgb)')"> <i class="fa fa-fw fa-user"> </i> ABOUT</a>
+        <a onclick="openPage('Work', this,'var(--rgb)')"> <i class="fa fa-fw fa-laptop"> </i> PROJECTS</a>
+        <a onclick="openPage('Papers', this,'var(--rgb)')"> <i class="fas fa-file-alt"> </i> PUBLICATIONS</a>
+        <a onclick="openPage('Achievements', this,'var(--rgb)')"> <i class="fa fa-fw fa-medal"> </i> AWARDS</a>
+        <a onclick="openPage('CV', this,'var(--rgb)')"> <i class="fa fa-fw fa-id-badge"> </i> PORTFOLIO</a>
+        <!--<a onclick="openPage('CV', this,'var(--rgb)')"> <i class="fa fa-fw fa-id-badge"> </i> BLOG</a>-->
+      </ul>
+  </div>
+</div>
+<a class="mobile">Vishal Keswani <span onclick="openNav(0)" class="mobilemenu">&#9776;</span></a>
+
+<div class="navbar">
+<a class="name"> &nbsp </a>
+<a style='text-align: left;' class="tablink1 active a1" onclick="openPage('About', this,'var(--rgb)')" id="defaultOpen"> <i class="fa fa-fw fa-user"> </i> ABOUT</a>
+<a style='text-align: left;' class="tablink1 a2" onclick="openPage('Work', this,'var(--rgb)')" id="hid"> <i class="fa fa-fw fa-laptop"> </i> PROJECTS</a>
+<a class="tablink1 a3" onclick="openPage('Papers', this,'var(--rgb)')" id="hid"> <i class="fas fa-file-alt"> </i> PUBLICATIONS</a>
+<a style='text-align: right;' class="tablink1 a4" onclick="openPage('Achievements', this,'var(--rgb)')"> <i class="fa fa-fw fa-medal"> </i> AWARDS</a>
+<a style='text-align: right;' class="tablink1 a5" onclick="openPage('CV', this,'var(--rgb)')"> <i class="fa fa-fw fa-id-badge"> </i> PORTFOLIO</a>
+<!--<a class="tablink1" onclick="openPage('CV', this,'var(--rgb)')"> <i class="fa fa-fw fa-user"> </i> <i class="fa fa-fw fa-laptop"> </i>   <i class="fas fa-file-alt"> </i><i class="fa fa-fw fa-medal"> </i><i class="fa fa-fw fa-id-badge"> </i></a>
+<a class="tablink1" onclick="openPage('CV', this,'var(--rgb)')"> <i class="fa fa-fw fa-id-badge"> </i> BLOG</a>-->
+<a class="name"> &nbsp </a>
+<!--<button class="tablink" onclick="openPage('Contact', this,'var(--rgb)')">  <i class="fa fa-fw fa-envelope"> </i> <a id="hid">CONTACT</a></button>
+<button class="tablink" onclick="openPage('Hobbies', this,'rgb(255, 44, 90)' )"> <b>  <i class="fa fa-fw fa-paint-brush"> </i>  HOBBIES</b></button>
+<button class="tablink" onclick="openPage('Lists', this)"><b>LISTS</b></button>-->
+</div>
+
+
+<!--<div class="lefter">
+  <a style="padding-left: 9vw;padding-bottom: 1vw"><img style="height: 12vw;width: 12vw;overflow-y: hidden;border-radius: 50%;box-shadow: 0px 3px 6px" src="download1.png"></a>
+  <a id="about1"><h1 style="padding-top: 0vh">VISHAL KESWANI</h1></a>
+  <p style="font-size: 4vh;text-shadow: 0px 0px 0px;font-family: serif;"><b>Data Scientist & NLP Researcher</b></p>
+<a class="tablink1" onclick="openPage('Home', this,'var(-rgb)')"  id="hid"> <i class="fa fa-fw fa-home"> </i> HOME</a>
+<a class="tablink1" onclick="openPage('About', this,'var(--rgb)')" id="defaultOpen"> <i class="fa fa-fw fa-user"> </i> ABOUT</a>
+<a class="tablink1" onclick="openPage('Work', this,'var(--rgb)')" id="hid"> <i class="fa fa-fw fa-laptop"> </i>  PROJECTS</a>
+<a class="tablink1" onclick="openPage('Papers', this,'var(--rgb)')" id="hid"> <i class="fas fa-file-alt"> </i> PUBLICATIONS</a>
+<a class="tablink1" onclick="openPage('Achievements', this,'var(--rgb)')" id="hid">  <i class="fa fa-fw fa-graduation-cap"> </i> AWARDS</a>
+<a class="tablink1" onclick="openPage('CV', this,'var(--rgb)')" id="hid"> <i class="fa fa-fw fa-id-badge"> </i> CV</a>
+
+</div>-->
+
+<!--<div id="Home" class="tabcontent">
+  
+    <table>
+        <tr>
+            <td id="about" style="overflow-y: hidden;">
+
+    <!-_<a style="font-size:1.5vw">Welcome to my webpage!</a><br>->
+    <h1>VISHAL KESWANI</h1>
+		<a><b>Data Scientist</b></a><br><br><br>
+		 
+    <table>
+      <tr><td></td>
+        <td style="animation-delay:0.0s;"><a href="mailto:keswanivishal1997@gmail.com"          target="_blank" class="social"><i class="fas fa-envelope"></i></a></td>
+        <td style="animation-delay:0.2s;"><a href="http://www.linkedin.com/in/vishalkeswani97"  target="_blank" class="social"><i class="fab fa-linkedin"></i></a></td>
+        <td style="animation-delay:0.4s;"><a href="https://github.com/vkeswani"                 target="_blank" class="social"><i class="fab fa-github"  ></i></a></td>
+        <td style="animation-delay:0.6s;"><a href="https://twitter.com/vkeswani_"               target="_blank" class="social"><i class="fab fa-twitter" ></i></a></td><td style="animation-delay:0.8s;"><a href="https://www.facebook.com/vishal.keswani.777" target="_blank" class="social"><i class="fab fa-facebook"></i></a></td>
+			 <!--<td class="animated zoomIn" style="animation-delay:0.6s;"><a href="https://www.instagram.com/vishal_k97_/" target="_blank" class="social"><i class="fab fa-instagram"></i></a></td>
+       <td class="animated zoomIn" style="animation-delay:1.8s;"><a class="social"><i class="fab fa-dribbble"></i></a></td>
+			<td class="animated zoomIn" style="animation-delay:1.4s;"><a class="social"><i class="fab fa-twitter"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.0s;"><a class="social"><i class="fab fa-medium"></i></a></td>->
+                   <td></td> </tr>
+                </table>          
+            </td>
+            <td id="rightImag"><img style="height: 20vw;overflow-y: hidden;" src="download1.png"><div><font color="white"> <b>  I hear and I forget. I see and I remember. I do and I understand.</b> ~Confucius</font></div>             </td>
+        </tr>
+    </table>
+
+</div>-->
+
+<div id="Work" class="tabcontent">
+  <div class="grid-container">
+
+        <!-- <div id="bio4" class="grid-child" >
+                <h1 style="font-family: Tahoma, sans-serif;text-shadow:2px 2px 2px rgba(255, 44, 90, 0.5)"><b>Internship Projects</b></h1>
+                <a>Click to view description.</a>
+          <div class="container1 right">
+          <div class="content1"><button class="accordion1">@Murata Vios Pvt Ltd </button>
+          </div>
+          </div>
+          <div class="container right">
+          <div class="content">
+            <button class="accordion" onclick="openNav(33)"><img style="width:30vh;height:30vh;align:center" src="finsim1.jpg"><br>Object and Face detection</button>
+          <div class="panel">
+          </div>
+            <div id="myNav33" class="overlay">
+              <div class="overlay-content">
+                  <a class="closebtn" onclick="closeNav(33)">x</a>
+                  <h2>Hypernym Detection in the Financial Domain via Context-Free and Contextualized Word Embeddings</h2>
+                <div class="grid-container">
+                  <div><img style="width:400px;height:80vh;align:center" src="foo.png">
+                  </div>
+                  <div>
+                      <a href="#">Streamlined the pipeline: converting raw images to tfrecords, training, conversion of checkpoints to tflite format. Customized Object detection (COCO dataset) and Face Detection (Open Images dataset) for Raspberry Pi 4. Trained quantized MobileNet V2 on LFW dataset & user faces, obtained Face Recognition accuracy upto 93%. Linked face detection and recognition systems, used frame-averaging and thresholding for robust predictions.</a>
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div>
+          </div>
+
+          <div class="container1 right">
+          <div class="content1"><button class="accordion1" >@Nokia Solutions & Networks</button>
+          </div>
+          </div>
+          <div class="container right">
+          <div class="content">
+            <button class="accordion" onclick="openNav(22)"><img style="width:30vh;height:30vh;align:center" src="finsim1.jpg"><br>QnA suggestion </button>
+          <div class="panel">
+          </div>
+          <div id="myNav22" class="overlay">
+          <div class="overlay-content">
+              <a class="closebtn" onclick="closeNav(22)">x</a>
+              <h2>Hypernym Detection in the Financial Domain via Context-Free and Contextualized Word Embeddings</h2>
+          <div class="grid-container">
+          <div><img style="width:400px;height:80vh;align:center" src="foo.png">
+          </div>
+          <div>
+              <a href="#">Obtained word documents containing the chat threads between the clients and the care engineers (CE). Extracted e-mail bodies to csv, followed by tokenization, removal of stop words, stemming and lower casing. Used keyword search to create ’queries and CE questions repository’, mapped the two with each other. Vectorized each row using tf-idf scores, utilized for calculation of cosine-similarity measure. Performed k-means and k-medoids on client queries; for a new query, found the order of similar centroids. Reported inquiry questions for first 3 clusters (based on mapping) in decreasing order of similarity.</a>
+          </div>
+          </div>
+          </div>
+          </div>  
+          </div>
+          </div>
+          <!-<div class="container right">
+            <div class="content">
+              <button class="accordion" >Anomaly detection in event logs</button>
+        <div class="panel">
+          <p align="justify"><font color="black">Assigned case ids to telecommunication log data (stream of unlabelled events) using an iterative EM procedure (Ferreira, 2009). Discovered process using alpha and inductive miner, the resulting petri net revealed a Spaghetti process. Performed conformance checking and classified event types as anomalous based on aggregate trace fitness score for different thresholds and submitted results for approval by domain expert.</font></p>
+        </div>
+            </div>
+          </div>->
+          <div class="container1 right">
+          <div class="content1"><button class="accordion1" >@SURGE, IIT Kanpur</button>
+          </div>
+          </div>
+          <div class="container right">
+          <div class="content">
+            <button class="accordion" onclick="openNav(11)"><img style="width:30vh;height:30vh;align:center" src="finsim1.jpg"><br>Web game for decision analysis</button>
+          <div class="panel">
+          </div>
+          <div id="myNav11" class="overlay">
+          <div class="overlay-content">
+              <a class="closebtn" onclick="closeNav(11)">x</a>
+              <h2>Hypernym Detection in the Financial Domain via Context-Free and Contextualized Word Embeddings</h2>
+          <div class="grid-container">
+          <div><img style="width:400px;height:80vh;align:center" src="foo.png">
+          </div>
+          <div>
+              <a href="#">Designed a web-based betting game-cum-experiment using HTML, CSS, JavaScript consisting of 4 types of trials corresponding to low and high cognitive sample size in the two settings (hedonic and utilitarian). Used the Logistic function to simulate outcomes of bets, applied Box-Muller method to generate a Random Gaussian sample used to calculate percentile of players based on total amount after every bet. Computed mean reaction times and performed outlier detection using IQR method in MATLAB, utilitarian choices seem to converge for both sample sizes while hedonic ones diverge from each other.</a>
+          </div>
+          </div>
+          </div>
+          </div>  
+          </div>
+          </div>
+        </div> -->
+
+        <div id="bio">
+          <h1><b>Full time</b><br><a style="font-size: min(2vh,2vw);font-weight: normal;text-shadow: none;"> (Click title to view description)</a></h1>
+          
+          <button class="accordion" onclick="openNav(33)" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(255,255,255,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('asr.png')">Speech Recognition for Interviews</button>
+          <button class="accordion" onclick="openNav(22)" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(255,255,255,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('cfbw.jpeg')">Content Feedback via text classification</button>
+          <button class="accordion" onclick="openNav(11)" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(250,250,250,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('sc.jpeg')">Language Modeling for Smart Compose</button>
+          
+          <h1><b>Internship</b><br><a style="font-size: min(2vh,2vw);font-weight: normal;text-shadow: none;"> (Click title to view description)</a></h1>
+          <tr class='flex'>
+          <td><button class="accordion" onclick="openNav(33)" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(255,255,255,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('murata1.jpg')">Object and Face detection</button></td>
+          <td><button class="accordion" onclick="openNav(22)" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(255,255,255,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('qna1.jpg')">QnA suggestion using NLP</button></td>
+          <td><button class="accordion" onclick="openNav(11)" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(250,250,250,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('web3.jpg')">Web game for decision analysis</button></td>
+          </tr>
+          <tr>
+          <h1><b>Research</b><a style="font-family: Tahoma, sans-serif;font-size: 1vw;line-height: 0vw;font-weight: normal;text-shadow:0px 0px 0px"> (Click title to view description)</a></h1>
+          <td><button class="accordion" onclick="openNav(6)" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(250,250,250,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('finsim1.jpg')">Hypernym Detection in Finance</button></td>
+          <td><button class="accordion" onclick="openNav(5)" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(250,250,250,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('meme2.jpg')">Emotion analysis of memes</button></td>
+          <td><button class="accordion" onclick="openNav(4)" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(250,250,250,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('reco1.png')">Recommendation system</button></td>
+          </tr>
+          <tr>
+          <td><button class="accordion" onclick="openNav(3)" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(250,250,250,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('senti3.jpg')">Tradewar sentiment analysis</button></td>
+          <td><button class="accordion" onclick="openNav(2)" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(250,250,250,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('time1.png')">Time Series Forecasting</button></td>
+          <td><button class="accordion" onclick="openNav(1)" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(250,250,250,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('mnist.png')">Matrix Factorisation on MNIST</button></td>
+          </tr>
+
+            <div id="myNav33" class="overlay">
+              <div class="overlay-content">
+                  <a class="closebtn" onclick="closeNav(33)">&times;</a>
+                  <h2>Hypernym Detection in the Financial Domain via Context-Free and Contextualized Word Embeddings</h2>
+                  <h3 style="color: rgb(255, 161, 177);">@Murata Vios Pvt Lmt</h3>
+                  <div class="grid-container">
+                  <a href="#hypernym" style="border: 1px solid white;">Used Word2vec word-embeddings trained on corpus from scratch and pre-trained BERT word-embeddings. Classified embeddings using distance metrics (L2, L1), cosine-similarity and simple classifiers (Logistic, Naïve Bayes). Word2vec with Naïve Bayes & BERT with Logistic Regression gave best test accuracy of 88% & mean rank 1.2 (FinSim'2020 shared task).</a>
+                  <ul>
+                    <li>Used Word2vec word-embeddings trained on corpus from scratch and pre-trained BERT word-embeddings</li>
+                    <li>Classified embeddings using distance metrics (L2, L1), cosine-similarity and simple classifiers (Logistic, Naïve Bayes)</li>
+                    <li>Word2vec with Naïve Bayes & BERT with Logistic Regression gave best test accuracy of 88% & mean rank 1.2 (FinSim'2020 shared task)</li>
+                    <li></li>
+                    <li></li>
+                  </ul>    
+                </div>
+              </div>
+            </div>
+
+            <div id="myNav22" class="overlay">
+              <div class="overlay-content">
+                  <a class="closebtn" onclick="closeNav(22)">&times;</a>
+                  <h2>Hypernym Detection in the Financial Domain via Context-Free and Contextualized Word Embeddings</h2>
+                  <div class="grid-container">
+                  <a href="#hypernym">Used Word2vec word-embeddings trained on corpus from scratch and pre-trained BERT word-embeddings. Classified embeddings using distance metrics (L2, L1), cosine-similarity and simple classifiers (Logistic, Naïve Bayes). Word2vec with Naïve Bayes & BERT with Logistic Regression gave best test accuracy of 88% & mean rank 1.2 (FinSim'2020 shared task).</a>
+                    </div>
+              </div>
+            </div>
+
+            <div id="myNav11" class="overlay">
+              <div class="overlay-content">
+                  <a class="closebtn" onclick="closeNav(11)">&times;</a>
+                  <h2>Hypernym Detection in the Financial Domain via Context-Free and Contextualized Word Embeddings</h2>
+                  <div class="grid-container">
+                  <a href="#hypernym">Used Word2vec word-embeddings trained on corpus from scratch and pre-trained BERT word-embeddings. Classified embeddings using distance metrics (L2, L1), cosine-similarity and simple classifiers (Logistic, Naïve Bayes). Word2vec with Naïve Bayes & BERT with Logistic Regression gave best test accuracy of 88% & mean rank 1.2 (FinSim'2020 shared task).</a>
+                    </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- <div id="bio4" class="grid-child">
+              <h1 style="font-family: Tahoma, sans-serif;"><b>Research Projects</b></h1>
+              <a>Click to view description.</a>
+        <div>
+          <div class="content">
+
+      <button class="accordion" onclick="openNav(6)"><img style="width:30vh;height:30vh;align:center" src="finsim1.jpg"><br> Hypernym Detection in Finance</button>
+      <div class="panel"></div>
+
+      <div id="myNav6" class="overlay">
+      <div class="overlay-content">
+          <a class="closebtn" onclick="closeNav(6)">x</a>
+          <h2>Hypernym Detection in the Financial Domain via Context-Free and Contextualized Word Embeddings</h2>
+          <div class="grid-container">
+          <img style="width:400px;height:80vh;align:center" src="foo.png">
+          <a href="#hypernym">Used Word2vec word-embeddings trained on corpus from scratch and pre-trained BERT word-embeddings. Classified embeddings using distance metrics (L2, L1), cosine-similarity and simple classifiers (Logistic, Naïve Bayes). Word2vec with Naïve Bayes & BERT with Logistic Regression gave best test accuracy of 88% & mean rank 1.2 (FinSim'2020 shared task).</a>
+      </div></div></div>      
+
+      </div>
+      </div>
+
+      <div class="container right">
+          <div class="content">
+          <button class="accordion" onclick="openNav(5)"><img style="width:30vh;height:30vh;align:center" src="finsim1.jpg"><br>Emotion analysis of memes</button>
+      <div class="panel"></div>
+      <div id="myNav5" class="overlay">
+      <div class="overlay-content">
+          <a class="closebtn" onclick="closeNav(5)">x</a>
+          <h2>Unimodal and Bimodal Sentiment Analysis of Internet Memes</h2>
+          <div class="grid-container">
+          <div><img style="width:400px;height:80vh;align:center" src="foo.png"></div>
+          <div>
+          <a href="#">Obtained memes annotated by organizers having both text and image modalities. Implemeted CNN (image-only) and ANN (text-only), combined using SVM, RF and Neural Network. Fine-tuned BERT (text-only) and Multimodal Bitransformer (text+image). Also used Naive Bayes (text-only). ANN+Word2vec perfomred best, beat baseline Macro-F1 by 63% for the sentiment analysis task under Memotion Analysis (Task 8, SemEval'2020).</a>
+      </div></div></div></div>    
+            
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+          <button class="accordion" onclick="openNav(4)"><img style="width:30vh;height:30vh;align:center" src="finsim1.jpg"><br>Recommendation system</button>
+      <div class="panel"></div>
+      <div id="myNav4" class="overlay">
+      <div class="overlay-content">
+          <a class="closebtn" onclick="closeNav(4)">x</a>
+          <h2>Hypernym Detection in the Financial Domain via Context-Free and Contextualized Word Embeddings</h2>
+          <div class="grid-container">
+          <div><img style="width:400px;height:80vh;align:center" src="foo.png"></div>
+          <div>
+          <a href="#">Explored different algorithms from the extreme multi-label classification repository (manikvarma.org). Parabel, PfastreXML and FastXML were the top picks based on performance on most evaluation metrics. Trained the three on a dataset of 10k users, represented by ~16k features, with ~3k labels of interest. FastXML performed overall best with model size 1.42mb, prec@1 80.4% & prec@3 49.7% on test dataset.</a>
+      </div></div></div></div>    
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+          <button class="accordion" onclick="openNav(3)"><img style="width:30vh;height:30vh;align:center" src="finsim1.jpg"><br>Tradewar sentiment analysis</button>
+      <div class="panel"></div>
+      <div id="myNav3" class="overlay">
+      <div class="overlay-content">
+          <a class="closebtn" onclick="closeNav(3)">x</a>
+          <h2>Hypernym Detection in the Financial Domain via Context-Free and Contextualized Word Embeddings</h2>
+          <div class="grid-container">
+          <div><img style="width:400px;height:80vh;align:center" src="foo.png"></div>
+          <div>
+          <a href="#">Extracted twitter data (~10m tweets) filtered by keyword ‘tradewar’ from Jan 2018 (beginning of US-China trade war). Performed data preprocessing - lowercasing, removing stop words etc, & replacing emoticons with words. Trained Naive Bayes, Maximum Entropy and Decision Tree classifiers. Naive Bayes gave the best accuracy (~74%) and least training time on sample. Classified tweets as positive/negative, classification probabilities gave a polarity score for each tweet. Aggregated polarity scores to get daily trend, hence, constructed a subjective proxy for policy decisions.</a>
+      </div></div></div></div>    
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <button class="accordion" onclick="openNav(2)"><img style="width:30vh;height:30vh;align:center" src="finsim1.jpg"><br>Time Series Forecasting</button>
+      <div class="panel"></div>
+      <div id="myNav2" class="overlay">
+      <div class="overlay-content">
+          <a class="closebtn" onclick="closeNav(2)">x</a>
+          <h2>Hypernym Detection in the Financial Domain via Context-Free and Contextualized Word Embeddings</h2>
+          <div class="grid-container">
+          <div><img style="width:400px;height:80vh;align:center" src="foo.png"></div>
+          <div>
+          <a href="#">Obtained seasonally adjusted real US GDP (quarterly) from the U.S. Bureau of Economic Analysis. Autocorrelation function, Dickey-Fuller & Phillips-Perron tests supported first differencing for stationariy. Used 9:1 train-test split due to high prediction time and walk-forward validation (rolling forecasts). Used MSE for tuning and model evaluation, ARIMA(1,1,1) performed best among econometric models. LSTM showed ~23% reduction in test MSE with 2 neurons & 18% with just 1 (batch-size = 1, epochs = 10).</a>
+      </div></div></div></div>    
+          </div>
+        </div>
+
+        <div class="container right">
+          <div class="content">
+          <button class="accordion" onclick="openNav(1)"><img style="width:30vh;height:30vh;align:center" src="finsim1.jpg"><br>Matrix Factorisation on MNIST</button>
+      <div class="panel"></div>
+      <div id="myNav1" class="overlay">
+      <div class="overlay-content">
+          <a class="closebtn" onclick="closeNav(1)">x</a>
+          <h2>Hypernym Detection in the Financial Domain via Context-Free and Contextualized Word Embeddings</h2>
+          <div class="grid-container">
+          <div><img style="width:400px;height:80vh;align:center" src="foo.png"></div>
+          <div>
+          <a href="#">Implemented PCA & NMF from scratch, performed dimensionality reduction on MNIST digits for K=2,3. Plotted transformed data in 2D and 3D, basis vectors and reconstructed samples for the two cases. Used NMF for image classification and obtained an accuracy of around ~80% on test data for K=3.</a>
+      </div></div></div></div>    
+          </div>
+        </div>
+        </div> -->
+
+  </div>
+</div>
+
+<!--<div id="Contact" class="tabcontent">
+  <div id="bio">
+        <h1 style="font-family: Tahoma, sans-serif;">Contact</h1>
+           
+                          <table>
+                               <!-- <tr>
+                                    <td><i class="fas fa-phone"></i> &nbsp; +91 8741 867 137</td>
+                                </tr>->
+                                <tr><td><i class="fas fa-at"></i> &nbsp; vkeswani@iitk.ac.in </td>
+                                </tr>
+                                <tr></tr>
+                                <tr><td><i class="fab fa-google"></i> &nbsp; keswanivishal1997@gmail.com</td>
+                                </tr>
+                                <tr></tr>
+                                <tr><td><i class="fab fa-linkedin"></i> &nbsp; <a href="http://www.linkedin.com/in/vishalkeswani97" target="_blank">LinkedIn</a></td>
+                                </tr>
+                                <tr></tr>
+                                <tr><td><i class="fab fa-facebook"></i> &nbsp; <a href="https://www.facebook.com/vishal.keswani.777" target="_blank">Facebook</a></td>
+                                </tr>
+                                <tr></tr>
+                                <tr><td><i class="fas fa-map-marker-alt"></i> &nbsp; Ajmer, Rajasthan </td>
+                                </tr>
+                               <!-- <tr>
+                                    <td>
+                                        <a class="social"><i class="fab fa-facebook"></i></a>
+                                        <a class="social"><i class="fab fa-twitter"></i></a>
+                                        <a class="social"><i class="fab fa-instagram"></i></a>
+                                        <a class="social"><i class="fab fa-dribbble"></i></a>
+                                        <a class="social"><i class="fab fa-medium"></i></a>
+                                    </td>
+                                </tr>->
+                          </table>
+                       
+    </div>
+</div> -->
+<div id="About" class="tabcontent">
+ <div id="bio" align=justify>
+        <h1 >About me</h1>
+        <p style="text-align: justify;"> 
+          <font color="black" >
+            Hey there! I am Vishal, <b id='key'>Data Scientist</b> at VMock Inc. I have around 3 years of experience in the field. Currently, my work is focused on Language Processing in the <b id='key'>Career Acceleration</b> space. I use the latest advancements in <b id='key'>NLP</b> and <b id='key'>Speech Processing</b> to help people in their professional journey. My days are spend working with deep learning models to automate solutions and perfecting the pipelines that ensure their functioning as robust technical products. 
+          </font>
+        </p>
+            <p style="text-align: justify;"> 
+          <font color="black" >
+            Since my JEE days I have had an inclination towards Mathematics and numbers in general. During my <b id='key'>Bachelor’s</b> at IIT Kanpur, I formed a solid foundation in <b id='key'>Statistics</b> and the use of Data in tackling real-world problems. Building onto the foundation, I did several courses and internships in <b id='key'>Machine Learning</b> and decided to join the data revolution. 
+            </font></p>
+            <p style="text-align: justify;"> 
+              <font color="black" >
+                  During my <b id='key'>Master’s</b>, I focused on working with unstructured textual data as the advent of <b id='key'>Transformers</b> called for my attention (pun intended). 
+         
+            <!-- Below keywords summarize the technical skillset I have built in the recent past. -->
+          </font>
+        </p>
+        <!-- <p style="text-align: justify;"> 
+        <font color="black" >
+        Hi, I am Vishal. I am a <b>Data Scientist</b> at <a href="https://www.vmock.com/" target="_blank" style="text-decoration: none;"><b>VMock Inc</b></a>. I graduated from <a href="https://www.iitk.ac.in/" target="_blank" style="text-decoration: none;"><b>IIT Kanpur</b></a> with a dual degree in <a href="https://iitk.ac.in/eco/" target="_blank" style="text-decoration: none;">Economic Sciences</a> and a minor degree in <a href="https://www.cse.iitk.ac.in/pages/MinorCourses_ML-AI.html" target="_blank" style="text-decoration: none;"><b>Machine Learning & Applications</b></a>. My background in Mathematical Economics gave me a solid foundation in Statistics and the use of Data in tackling real-world problems. Building onto the foundation, I did several courses and internships in Machine Learning and decided to join the data revolution. 
+        </font>
+        </p>
+        <p style="text-align: justify;"> 
+          <font color="black" >
+        Currently, my work is focused on Natural Language Processing in the Career Acceleration space. My days are spend working with deep learning models to automate solutions and perfecting the pipelines that ensure their functioning as robust technical products. 
+        </font>
+        </p> -->
+        <!-- <p style="text-align: justify;"> 
+          <font color="black" >
+        Following is a snapshot of my professional journey. Feel free to reach out to me for exciting ideas and opportunities. 
+        </font>
+        </p> -->
+
+        <!-- <font color="black" >
+          <p style="text-align: justify;"> 
+          Hi, I am Vishal. I am a dual degree student at <b>IIT Kanpur</b>. I have a minor degree in <b>Machine Learning</b>. I work in the fields of <b>Natural Language Processing</b>, Machine Learning and Econometrics. I aspire to make a career in the same and have done many relevant projects and courses. My projects have been in Sentiment Analysis, Recommendation Systems, Image Processing, Matrix Factorization, Time Series forecasting etc. If you want to collaborate with me, feel free to reach out via gmail. 
+          </font></p>
+          <p style="text-align: justify;"> <font color="black" >
+          I have worked in <b>Python</b>, MATLAB, R, C and C++ depending on the course and project requirements. I am also familiar with web technologies, including HTML, CSS, JavaScript and SQL. I have used many python packages including <b>TensorFlow</b>, <b>Pytorch</b>, Pm4Py, NumPy, Pandas, Nltk, Keras, TextBlob, ScikitLearn etc. I am comfortable with both Linux and Windows and did a course in bash scripting. 
+          </font></p>  
+          <p style="text-align: justify;"> <font color="black" >
+          I took part in international challenges under <b>SemEval-2020</b> and <b>FinNLP-2020</b> in which my team stood first. Check out the corresponding <a href="https://www.aclweb.org/anthology/people/v/vishal-keswani/" target="_blank"><b>PUBLICATIONS</b></a>.
+          </font></p>     -->
+          <!-- <table id='key'>
+          <tr><td>Python Pytorch Tensorflow Huggingface Numpy Pandas Spacy Sklearn Mlflow Flask Deepspeed Onnx</td></tr>
+          <tr><td>Git Docker DVC Devspace Kubernetes Celery Redis New relic</td></tr>
+          <tr><td>AWS S3 Sagemaker Copilot OpenSearch</td></tr>
+          <tr><td>HTML CSS Javascript Jquery</td></tr>
+          </table> -->
+          <!-- <table id='key1'>
+            <tr><td>Python, Pytorch, Tensorflow, Huggingface, Numpy, Pandas, Spacy, Mlflow, Flask, Deepspeed, Onnx</td></tr>
+            <tr><td>BERT, GPT2, LSTM, QRNN, Whisper, S-BERT, GPT-Neo, Falcon, MPT, Llama</td></tr>
+            <tr><td>Git, Docker, DVC, Devspace, Kubernetes, Celery, Redis, New relic</td></tr>
+            <tr><td>AWS S3, Sagemaker, Copilot, OpenSearch</td></tr>
+            <tr><td>HTML, CSS, Javascript, Jquery</td></tr>
+          </table> -->
+            
+          <!-- <table id='key' style="text-align: left; font-weight: bold;">
+            <tr><td>Python</td><td>Git</td><td>AWS S3</td><td>HTML</td></tr>
+            <tr><td>PyTorch</td><td>Docker</td><td>Sagemaker</td><td>CSS</td></tr> 
+            <tr><td>TensorFlow</td><td>Devspace</td><td>OpenSearch</td><td>JavaScript</td></tr> 
+            <tr><td>Huggingface</td><td>Kubernetes</td><td>Copilot</td><td>JQuery</td></tr> 
+            <tr><td>DeepSpeed</td><td>Celery</td><td></td><td></td></tr>  
+            <tr><td>ONNX</td><td>Redis</td><td></td><td></td></tr> 
+            <tr><td>MLFlow</td><td>NewRelic</td><td></td><td></td></tr> 
+          </table> -->
+    </div>
+    
+</div>
+
+<div id="CV" class="tabcontent">
+  <div id="bio" >
+        <h1>Resume <a style="font-size: min(2vh,2vw);font-weight: normal;text-shadow: none;" target="_blank" href="https://github.com/vkeswani/vkeswani.github.io/blob/master/Resume_Vishal_Keswani.pdf">(link)</a></h1>
+  </div>
+  <a id='emb'> </a><embed src="Resume_Vishal_Keswani.pdf" type="application/pdf" width="60%" height="50%"  />
+  <div id="bio" >
+     <h1>CV <a style="font-size: min(2vh,2vw);font-weight: normal;text-shadow: none;" target="_blank" href="https://github.com/vkeswani/vkeswani.github.io/blob/master/CV_Vishal_Keswani.pdf">(link)</a></h1>
+<!--<a href="https://drive.google.com/open?id=1LWiR8pfRoDeFGNAU1rGOVwy49CviGJ6q" target="_blank"></a>-->
+</div>
+<a id='emb'> </a><embed src="CV_Vishal_Keswani.pdf" type="application/pdf" width="60%" height="50%"  />
+</div>
+
+<div id="Papers" class="tabcontent">
+ <div id="bio">
+ 
+        <h1>Publications</h1>
+        <!--<table>
+          <tr>
+            <td><img style="height: 12vw;width: 18vw;overflow-y: hidden;" src="pipeline.png"></td>
+            <td><b>Formulating Neural Sentence Ordering as the Asymmetric Traveling Salesman Problem</b><br>
+            <i>14th International Conference on Natural Language Generation (INLG'21)</i><br>
+            [PDF] [PPT] [Talk] [Code]</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>-->
+          <b>Formulating Neural Sentence Ordering as the Asymmetric Traveling Salesman Problem</b> (Long,Oral)<br>
+            <i>14th International Conference on Natural Language Generation (INLG'21)</i><br>
+            <b style="font-size: min(2vh,2vw)"><a href="https://aclanthology.org/2021.inlg-1.13.pdf">[PDF]</a> [PPT] [Talk] <a href="https://github.com/vkeswani/BerTSP" target="_blank">[Code]</a></b><br><br>
+
+          <b>Hypernym Detection in Financial Domain via Context-Free and Contextualized Word Embeddings</b><br>
+            <i>2nd Workshop on Financial Technology and Natural Language Processing (IJCAI'20)</i><br>
+            <b style="font-size: min(2vh,2vw)"><a href="https://aclanthology.org/2020.finnlp-1.14.pdf">[PDF]</a> [PPT] [Talk] <a href="https://github.com/vkeswani/IITK_FinSim_2020" target="_blank">[Code]</a></b><br><br>
+          <b>Unimodal and Bimodal Sentiment Analysis of Internet Memes</b><br>
+            <i>14th Workshop on Semantic Evaluation (COLING'20)</i><br>
+            <b style="font-size: min(2vh,2vw)"><a href="https://aclanthology.org/2020.semeval-1.150.pdf">[PDF]</a> <a href="https://github.com/vkeswani/IITK_Memotion_Analysis" target="_blank">[Code]</a></b><br><br>
+          
+        
+  
+  
+    
+    </div>
+</div>
+
+<div id="Achievements" class="tabcontent">
+ <div id="bio"  style="text-align: eft; line-height: min(5vh,5vw)">
+        <!--<h1>Academics</h1>-->
+        <h1>Technical</h1>
+<!--<ul style="padding-left: 1vw;padding-bottom: 0vw">
+  <li><b>Ranked 1st</b> in the FinSim Shared Task organised under <b>FinNLP-2020</b> International Workshop</li>
+  <li><b>Stood 1st</b> in Task A of Memotion Analysis organised under <b>SemEval-2020</b> International Workshop</li>	
+  <li>Received <b>Commendation Certificate</b> for excellent performance under the <b>SURGE’2018</b> program </li>
+  <li>Bagged the <b>Best Staff’s Pick Project Award</b> in the Technical Arts course in a batch of 380</li>
+ <li>Ranked in <b>top 0.05%</b> in JEE Mains (City Rank 1) and <b>top 0.15%</b> in JEE Advanced (City Rank 2)</li>
+  <!--<li>Secured AIR 538 in JEE Mains 2016 out of 1.5 million candidates with City Rank 1</li>--
+  <li>Received <b>Certificate of Merit</b> from K.V.S. for standing in the <b>top 1.5%</b> in C.B.S.E. examination</li>
+</ul>-->
+
+ <!--<li><b>FinNLP'20 </b>Ranked 1st in the FinSim Shared Task on hypernym detection</li>
+  <p><b>SemEval'20 </b>Stood 1st in Task 8A on Sentiment Analysis of Memes </p> 
+  <p><b>SURGE'18 </b>Received Commendation Certificate for excellent performance </p>
+  <p><b>TA201A </b>Bagged the Best Staff’s Pick Project Award in a batch of 380</p>
+ <p><b>JEE Mains </b>Ranked in top 0.05% nationally, stood 1st in city (Ajmer)</p>
+ <p><b>JEE Advanced </b>Ranked in top 0.15% nationally, stood 2nd in city (Ajmer)</p>
+  <!-<li>Secured AIR 538 in JEE Mains 2016 out of 1.5 million candidates with City Rank 1</li>--
+  <p><b>CBSE </b>Received Certificate of Merit from K.V.S. for standing in top 1.5%</p>-->
+ 
+  <b>FinNLP'20 </b>Ranked 1st in the FinSim Shared Task on hypernym detection<br>
+  <b>SemEval'20 </b>Stood 1st in SemEval Task on Sentiment Analysis of Memes <br> 
+  <b>SURGE'18 </b>Received Commendation Certificate for excellent performance <br>
+  <b>TA201A </b>Bagged the Best Staff’s Pick Project Award in a batch of 380<br>
+  <b>JEE Mains </b>Ranked in top 0.05% nationally, stood 1st in city (Ajmer)<br>
+  <b>JEE Advanced </b>Ranked in top 0.15% nationally, stood 2nd in city (Ajmer)<br>
+  <!--<li>Secured AIR 538 in JEE Mains 2016 out of 1.5 million candidates with City Rank 1</li>-->
+  <b>CBSE </b>Received Certificate of Merit from K.V.S. for standing in top 1.5%<br>
+
+         
+ 
+        <h1>Extra Curriculars</h1>
+<!--<ul style="padding-left: 1vw;padding-right: 1vw;">
+  <li>Secured the <b>1st position</b> in <b>British Parliamentary Debate</b> in Galaxy'2017 (Inter-pool cultural fest of IITK)</li>
+  <li>Became <b>School Captain</b> of Kendriya Vidyalaya 1, Ajmer, also won <b>Best Student Award</b> in 12th standard</li>
+  <li><b>Best Speaker</b> from region in <b>Youth Parliament Competition</b>'2013-14 at the Zonal level (5 zones in India)</li>
+  <li><b>Captained</b> School Cricket Team of E.P.S. Ajmer and won <b>Fair-Play Award</b> in an open cricket tournament</li>
+  <li>Stood in <b>top 150</b> in Tata Building India Essay Competition among <b>2 million participants</b> in 2010-11 & 11-12</li>
+</ul>-->
+
+  <b>Galaxy'17</b> Secured the 1st position in British Parliamentary Debate<br>
+  <b>12th</b> Became School Captain of K.V.1 Ajmer, also won Best Student Award<br>
+  <b>KVS</b> Best Regional Speaker in Youth Parliament Competition'13-14 at Zonal level<br>
+  <b>10th</b> Captained School Cricket Team of E.P.S. Ajmer, won Fair-Play Award<br>
+  <b>EPS</b> Stood in top 150 in Tata Building India Essay Competition'11-12 in 2 million<br>
+</div>
+</div>
+
+    <!--<div id="Hobbies" class="tabcontent">
+        <h1>work</h1>
+        <div id="photos">
+            <table width="100%"><tr><img onclick="magnify($(this).attr('src'))" src="43.jpg#w=1000&q=100"></tr>
+            <tr><img onclick="magnify($(this).attr('src'))" src="40.jpg#w=967&q=80">
+            <img onclick="magnify($(this).attr('src'))" src="41.jpg#w=967&q=80">
+            <img onclick="magnify($(this).attr('src'))" src="42.jpg#w=650&q=80"></tr></table>
+
+         
+        </div>
+    </div>-->
+
+<script src="index.js" type="text/javascript"></script>
+</body>
+</html>
