@@ -93,8 +93,8 @@
 <a class="name"> &nbsp </a>
 <a style='text-align: left;' class="tablink1 active a1" onclick="openPage('About', this,'var(--rgb)')" id="defaultOpen"> <i class="fa fa-fw fa-user"> </i> ABOUT</a>
 <a style='text-align: left;' class="tablink1 a2" onclick="openPage('Work', this,'var(--rgb)')" id="hid"> <i class="fa fa-fw fa-laptop"> </i> PROJECTS</a>
-<a class="tablink1 a3" onclick="openPage('Papers', this,'var(--rgb)')" id="hid"> <i class="fas fa-file-alt"> </i> PUBLICATIONS</a>
-<a style='text-align: right;' class="tablink1 a4" onclick="openPage('Achievements', this,'var(--rgb)')"> <i class="fa fa-fw fa-medal"> </i> AWARDS</a>
+<a style='text-align: center' class="tablink1 a3" onclick="openPage('Papers', this,'var(--rgb)')" id="hid"> <i class="fas fa-file-alt"> </i> PUBLICATIONS</a>
+<a style='text-align: right' class="tablink1 a4" onclick="openPage('Achievements', this,'var(--rgb)')"> <i class="fa fa-fw fa-medal"> </i> AWARDS</a>
 <a style='text-align: right;' class="tablink1 a5" onclick="openPage('CV', this,'var(--rgb)')"> <i class="fa fa-fw fa-id-badge"> </i> PORTFOLIO</a>
 <!--<a class="tablink1" onclick="openPage('CV', this,'var(--rgb)')"> <i class="fa fa-fw fa-user"> </i> <i class="fa fa-fw fa-laptop"> </i>   <i class="fas fa-file-alt"> </i><i class="fa fa-fw fa-medal"> </i><i class="fa fa-fw fa-id-badge"> </i></a>
 <a class="tablink1" onclick="openPage('CV', this,'var(--rgb)')"> <i class="fa fa-fw fa-id-badge"> </i> BLOG</a>-->
@@ -237,43 +237,56 @@
         </div> -->
 
         <div id="bio">
-          <h1><b>Full time</b><br><a style="font-size: min(2vh,2vw);font-weight: normal;text-shadow: none;"> (Click title to view description)</a></h1>
+          <h1><b>Full time</b><br><a style="font-size: min(2vh,2vw);font-weight: normal;text-shadow: none;"> (Check Portfolio-Resume for description)</a></h1>
+          <button class="accordion" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(255,255,255,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('imgs/asr.png')">Speech Recognition for Interviews</button>
+          <button class="accordion" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(255,255,255,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('imgs/cfbw.jpeg')">Content Feedback via text classification</button>
+          <button class="accordion" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(250,250,250,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('imgs/sc.jpeg')">Language Modeling for Smart Compose</button>
           
-          <button class="accordion" onclick="openNav(33)" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(255,255,255,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('asr.png')">Speech Recognition for Interviews</button>
+          <h1><b>Internship</b><br><a style="font-size: min(2vh,2vw);font-weight: normal;text-shadow: none;"> (Click Portfolio-Resume for description)</a></h1>
+          <td><button class="accordion" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(255,255,255,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('imgs/murata1.jpg')">Object and Face detection</button></td>
+          <td><button class="accordion" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(255,255,255,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('imgs/qna1.jpg')">QnA suggestion using NLP</button></td>
+          <td><button class="accordion" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(250,250,250,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('imgs/web3.jpg')">Web game for decision analysis</button></td>
+          
+          <h1><b>Academic</b><br><a style="font-size: min(2vh,2vw);font-weight: normal;text-shadow: none;"> (Click Portfolio-CV for description)</a></h1>
+          <td><button class="accordion" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(250,250,250,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('imgs/finsim1.jpg')">Hypernym Detection in Finance</button></td>
+          <td><button class="accordion" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(250,250,250,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('imgs/meme2.jpg')">Emotion analysis of memes</button></td>
+          <td><button class="accordion" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(250,250,250,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('imgs/reco1.png')">Recommendation system</button></td>
+          
+          <td><button class="accordion" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(250,250,250,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('imgs/senti3.jpg')">Tradewar sentiment analysis</button></td>
+          <td><button class="accordion" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(250,250,250,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('imgs/time1.png')">Time Series Forecasting</button></td>
+          <td><button class="accordion" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(250,250,250,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('imgs/mnist.png')">Matrix Factorisation on MNIST</button></td>
+          
+          <!-- <button class="accordion" onclick="openNav(33)" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(255,255,255,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('asr.png')">Speech Recognition for Interviews</button>
           <button class="accordion" onclick="openNav(22)" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(255,255,255,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('cfbw.jpeg')">Content Feedback via text classification</button>
           <button class="accordion" onclick="openNav(11)" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(250,250,250,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('sc.jpeg')">Language Modeling for Smart Compose</button>
           
           <h1><b>Internship</b><br><a style="font-size: min(2vh,2vw);font-weight: normal;text-shadow: none;"> (Click title to view description)</a></h1>
-          <tr class='flex'>
           <td><button class="accordion" onclick="openNav(33)" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(255,255,255,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('murata1.jpg')">Object and Face detection</button></td>
           <td><button class="accordion" onclick="openNav(22)" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(255,255,255,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('qna1.jpg')">QnA suggestion using NLP</button></td>
           <td><button class="accordion" onclick="openNav(11)" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(250,250,250,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('web3.jpg')">Web game for decision analysis</button></td>
-          </tr>
-          <tr>
-          <h1><b>Research</b><a style="font-family: Tahoma, sans-serif;font-size: 1vw;line-height: 0vw;font-weight: normal;text-shadow:0px 0px 0px"> (Click title to view description)</a></h1>
+          
+          <h1><b>Academic</b><a style="font-family: Tahoma, sans-serif;font-size: 1vw;line-height: 0vw;font-weight: normal;text-shadow:0px 0px 0px"> (Click title to view description)</a></h1>
           <td><button class="accordion" onclick="openNav(6)" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(250,250,250,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('finsim1.jpg')">Hypernym Detection in Finance</button></td>
           <td><button class="accordion" onclick="openNav(5)" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(250,250,250,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('meme2.jpg')">Emotion analysis of memes</button></td>
           <td><button class="accordion" onclick="openNav(4)" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(250,250,250,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('reco1.png')">Recommendation system</button></td>
-          </tr>
-          <tr>
+          
           <td><button class="accordion" onclick="openNav(3)" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(250,250,250,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('senti3.jpg')">Tradewar sentiment analysis</button></td>
           <td><button class="accordion" onclick="openNav(2)" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(250,250,250,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('time1.png')">Time Series Forecasting</button></td>
           <td><button class="accordion" onclick="openNav(1)" style="background: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(250,50,100,0.6),rgba(255,255,255,0.9),rgba(250,250,250,0.9),rgba(250,50,100,0.6),rgba(0,0,0,0.3)),url('mnist.png')">Matrix Factorisation on MNIST</button></td>
-          </tr>
-
+           -->
             <div id="myNav33" class="overlay">
               <div class="overlay-content">
                   <a class="closebtn" onclick="closeNav(33)">&times;</a>
-                  <h2>Hypernym Detection in the Financial Domain via Context-Free and Contextualized Word Embeddings</h2>
-                  <h3 style="color: rgb(255, 161, 177);">@Murata Vios Pvt Lmt</h3>
+                  <h2>Automatic Speech Recognition for interview transcription</h2>
+                  <h3 style="color: rgb(255, 161, 177);">@VMock India Pvt Lmt</h3>
                   <div class="grid-container">
-                  <a href="#hypernym" style="border: 1px solid white;">Used Word2vec word-embeddings trained on corpus from scratch and pre-trained BERT word-embeddings. Classified embeddings using distance metrics (L2, L1), cosine-similarity and simple classifiers (Logistic, Naïve Bayes). Word2vec with Naïve Bayes & BERT with Logistic Regression gave best test accuracy of 88% & mean rank 1.2 (FinSim'2020 shared task).</a>
+                  <!-- <a href="#hypernym" style="border: 1px solid white;">Used Word2vec word-embeddings trained on corpus from scratch and pre-trained BERT word-embeddings. Classified embeddings using distance metrics (L2, L1), cosine-similarity and simple classifiers (Logistic, Naïve Bayes). Word2vec with Naïve Bayes & BERT with Logistic Regression gave best test accuracy of 88% & mean rank 1.2 (FinSim'2020 shared task).</a> -->
                   <ul>
-                    <li>Used Word2vec word-embeddings trained on corpus from scratch and pre-trained BERT word-embeddings</li>
-                    <li>Classified embeddings using distance metrics (L2, L1), cosine-similarity and simple classifiers (Logistic, Naïve Bayes)</li>
-                    <li>Word2vec with Naïve Bayes & BERT with Logistic Regression gave best test accuracy of 88% & mean rank 1.2 (FinSim'2020 shared task)</li>
-                    <li></li>
-                    <li></li>
+                    <li>Streamlined the 3 step ASR pipeline, removing third party dependency and saving upto $2k per month variable costs </li>
+                    <li>Voice Activity Detection: compared low-latency vad models, used silero-vad to find no speech regions for audio splitting </li>
+                    <li>Audio Transcription: developed in-house speech-to-text capability with Whisper, testing across sizes and frameworks </li>
+                    <li>Phoneme Alignment: used wav2vec2 for generating time-stamps of text over audio for subtitling and targeted feedback </li>
+                    <li>Reduced word error rate by 51% on technical transcripts and 29% overall, reduced latency by 20% using onnx format </li>
                   </ul>    
                 </div>
               </div>
@@ -512,11 +525,12 @@
 
 <div id="CV" class="tabcontent">
   <div id="bio" >
-        <h1>Resume <a style="font-size: min(2vh,2vw);font-weight: normal;text-shadow: none;" target="_blank" href="https://github.com/vkeswani/vkeswani.github.io/blob/master/Resume_Vishal_Keswani.pdf">(link)</a></h1>
+        <h1>Resume<br> <a style="font-size: min(2vh,2vw);font-weight: normal;text-shadow: none;" target="_blank" href="https://vkeswani.github.io/Resume_Vishal_Keswani.pdf"><b>Link</b></a> <a style="font-size: min(2vh,2vw);font-weight: normal;text-shadow: none;">Last updated: Oct'23</a></h1>
+        <!-- <a style="font-size: min(2vh,2vw);font-weight: normal;text-shadow: none;padding-top:0vh"> (Check Portfolio-Resume for description)</a> -->
   </div>
   <a id='emb'> </a><embed src="Resume_Vishal_Keswani.pdf" type="application/pdf" width="60%" height="50%"  />
   <div id="bio" >
-     <h1>CV <a style="font-size: min(2vh,2vw);font-weight: normal;text-shadow: none;" target="_blank" href="https://github.com/vkeswani/vkeswani.github.io/blob/master/CV_Vishal_Keswani.pdf">(link)</a></h1>
+     <h1> Long CV<br> <a style="font-size: min(2vh,2vw);font-weight: normal;text-shadow: none;" target="_blank" href="https://vkeswani.github.io/CV_Vishal_Keswani.pdf"><b>Link</b></a> <a style="font-size: min(2vh,2vw);font-weight: normal;text-shadow: none;">(Last updated: Jun'21)</a></h1>
 <!--<a href="https://drive.google.com/open?id=1LWiR8pfRoDeFGNAU1rGOVwy49CviGJ6q" target="_blank"></a>-->
 </div>
 <a id='emb'> </a><embed src="CV_Vishal_Keswani.pdf" type="application/pdf" width="60%" height="50%"  />
@@ -549,7 +563,8 @@
           <b>Hypernym Detection in Financial Domain via Context-Free and Contextualized Word Embeddings</b><br>
             <i>2nd Workshop on Financial Technology and Natural Language Processing (IJCAI'20)</i><br>
             <b style="font-size: min(2vh,2vw)"><a href="https://aclanthology.org/2020.finnlp-1.14.pdf">[PDF]</a> [PPT] [Talk] <a href="https://github.com/vkeswani/IITK_FinSim_2020" target="_blank">[Code]</a></b><br><br>
-          <b>Unimodal and Bimodal Sentiment Analysis of Internet Memes</b><br>
+          
+            <b>Unimodal and Bimodal Sentiment Analysis of Internet Memes</b><br>
             <i>14th Workshop on Semantic Evaluation (COLING'20)</i><br>
             <b style="font-size: min(2vh,2vw)"><a href="https://aclanthology.org/2020.semeval-1.150.pdf">[PDF]</a> <a href="https://github.com/vkeswani/IITK_Memotion_Analysis" target="_blank">[Code]</a></b><br><br>
           
@@ -561,7 +576,7 @@
 </div>
 
 <div id="Achievements" class="tabcontent">
- <div id="bio"  style="text-align: eft; line-height: min(5vh,5vw)">
+ <div id="bio"  style="line-height: min(5vh,5vw);">
         <!--<h1>Academics</h1>-->
         <h1>Technical</h1>
 <!--<ul style="padding-left: 1vw;padding-bottom: 0vw">
@@ -582,15 +597,15 @@
  <p><b>JEE Advanced </b>Ranked in top 0.15% nationally, stood 2nd in city (Ajmer)</p>
   <!-<li>Secured AIR 538 in JEE Mains 2016 out of 1.5 million candidates with City Rank 1</li>--
   <p><b>CBSE </b>Received Certificate of Merit from K.V.S. for standing in top 1.5%</p>-->
- 
-  <b>FinNLP'20 </b>Ranked 1st in the FinSim Shared Task on hypernym detection<br>
-  <b>SemEval'20 </b>Stood 1st in SemEval Task on Sentiment Analysis of Memes <br> 
-  <b>SURGE'18 </b>Received Commendation Certificate for excellent performance <br>
-  <b>TA201A </b>Bagged the Best Staff’s Pick Project Award in a batch of 380<br>
-  <b>JEE Mains </b>Ranked in top 0.05% nationally, stood 1st in city (Ajmer)<br>
-  <b>JEE Advanced </b>Ranked in top 0.15% nationally, stood 2nd in city (Ajmer)<br>
+  <b id='key'>VMock'23 </b>Awarded STAR Employee for exceptional performance<br>
+  <b id='key'>FinNLP'20 </b>Ranked 1st in the FinSim Shared Task on hypernym detection<br>
+  <b id='key'>SemEval'20 </b>Stood 1st in SemEval Task on Sentiment Analysis of Memes <br> 
+  <b id='key'>SURGE'18 </b>Received Commendation Certificate for excellent performance <br>
+  <b id='key'>TA201A </b>Bagged the Best Staff’s Pick Project Award in a batch of 380<br>
+  <b id='key'>JEE Mains </b>Ranked in top 0.05% nationally, stood 1st in city (Ajmer)<br>
+  <b id='key'>JEE Advanced </b>Ranked in top 0.15% nationally, stood 2nd in city (Ajmer)<br>
   <!--<li>Secured AIR 538 in JEE Mains 2016 out of 1.5 million candidates with City Rank 1</li>-->
-  <b>CBSE </b>Received Certificate of Merit from K.V.S. for standing in top 1.5%<br>
+  <b id='key'>CBSE </b>Received Certificate of Merit from K.V.S. for standing in top 1.5%<br>
 
          
  
@@ -603,11 +618,12 @@
   <li>Stood in <b>top 150</b> in Tata Building India Essay Competition among <b>2 million participants</b> in 2010-11 & 11-12</li>
 </ul>-->
 
-  <b>Galaxy'17</b> Secured the 1st position in British Parliamentary Debate<br>
-  <b>12th</b> Became School Captain of K.V.1 Ajmer, also won Best Student Award<br>
-  <b>KVS</b> Best Regional Speaker in Youth Parliament Competition'13-14 at Zonal level<br>
-  <b>10th</b> Captained School Cricket Team of E.P.S. Ajmer, won Fair-Play Award<br>
-  <b>EPS</b> Stood in top 150 in Tata Building India Essay Competition'11-12 in 2 million<br>
+<b id='key'>VMock'21</b> Won 2nd prize for best Coordinated Attire in Diwali'21<br>
+<b id='key'>Galaxy'17</b> Secured the 1st position in British Parliamentary Debate<br>
+<b id='key'>12th</b> Became School Captain of K.V.1 Ajmer, also won Best Student Award<br>
+  <b id='key'>KVS</b> Best Regional Speaker in Youth Parliament Competition'13-14 at Zonal level<br>
+  <b id='key'>10th</b> Captained School Cricket Team of E.P.S. Ajmer, won Fair-Play Award<br>
+  <b id='key'>EPS</b> Stood in top 150 in Tata Building India Essay Competition'11-12 in 2 million<br><br>
 </div>
 </div>
 
