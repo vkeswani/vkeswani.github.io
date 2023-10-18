@@ -462,10 +462,14 @@ top_part {
     background:rgb(255, 44, 90);
 }
 #rightImage {
+  filter:;
+  box-shadow: 0.5vw 0.5vw 0.5vw rgba(0, 0, 0, 0.5);
+  padding-right: 4vw;
+  padding-block: 2vw;
     font-size: min(2.5vh,2vw);
     font-family: Tahoma, sans-serif;
-    background:linear-gradient(0deg,rgba(0, 0, 0, 1),rgba(255, 44, 90, 0.3)),url("download1.png") center center;
-    background-size:cover;
+    backgroun:linear-gradient(0deg,rgba(0, 0, 0, 1),rgba(255, 44, 90, 0.3)),url("download1.png") center center;
+    bckground-size:cover;
     /*background-repeat:no-repeat;*/
 }
 #wor {
