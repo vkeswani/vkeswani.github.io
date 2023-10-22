@@ -542,7 +542,7 @@ bioCV {
     ont-family: system-ui;
     font-family: var(--font);
     line-height: min(4vh,4vw);
-    padding-bottom: 2vh;
+    padding-bottom: 4vh;
 }
 #bio h1 {
   text-align: center;
@@ -553,7 +553,7 @@ bioCV {
   color: black;
   word-wrap:break-word;
   text-shadow: 1px 1px 1px rgba(255, 44, 90, 0.5);
-  padding-top: min(2vh, 2vw);
+  padding-top: min(2vh, 1vw);
   ine-height: max(4vh, 4vw);
 }
 #bio button{
