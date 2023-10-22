@@ -1009,7 +1009,7 @@ right {
     overflow-y: scroll;
     padding-left: 5vw; 
     padding-right: 5vw; 
-    font-size: 12px;min(2vh,15px);
+    font-size: 14px;min(2vh,15px);
     font-family: system-ui;
     line-height: min(4vh,4vw);
   }
