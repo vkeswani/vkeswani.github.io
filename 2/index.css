@@ -69,7 +69,7 @@ body, html {
     font-family: Tahoma, sans-serif;
     font-weight: bod;
     min(normal,normal);
-    font-size: min(3vh,3vw);
+    font-size: min(4vh,4vw);
     ackground: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(255, 44, 90, 0.5));transparent;
     background: linear-gradient(0deg,rgba(110, 110, 110, 1),rgb(250, 138, 162));transparent;
     text-shadow: 0px 0px 3px rgba(245, 241, 242, 0.6);
@@ -384,7 +384,7 @@ top_part {
   padding-left: 15vw;
 }
 .foot #leftb {
-  font-size: min(6vh, 6vw);
+  font-size: min(6vh, 8vw);
   background-color: transparent;
   border: none;
   text-align: left;
@@ -394,7 +394,7 @@ top_part {
   text-shadow: 0px 0px 8px rgba(0,0,0,1);
 }
 .foot #rightb {
-  font-size: min(6vh, 6vw);
+  font-size: min(6vh, 8vw);
   background-color: transparent;
   border: none;
   text-align: right;
@@ -1036,7 +1036,7 @@ right {
     position: fixed;
     display: inline;
     font-weight: bold;
-    font-size: min(4vh,25pt);
+    font-size: 18pt;min(3vh,25pt);
     background: linear-gradient(0deg,rgba(110, 110, 110, 1),rgb(250, 138, 162));
     text-shadow: rgb(231, 214, 214);
                  
@@ -1085,6 +1085,7 @@ right {
   }
   #bio button {
     width: 90vw;
+    font-size: min(4vw, 2.5vh);
   }
   .overlay-content ul a{
     font-size: 15px;
