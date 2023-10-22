@@ -83,7 +83,7 @@ body, html {
     padding: 0.8vw 1vh;
     /*font-size: bold 50vw;*/
     width: 20vw;
-    height: 10vh;
+    height: 9vh;
     /*border: 0.2vw solid rgba(0,255,0,0.7);
     text-decoration-color: black;
     text-shadow: 0px 0px 8px #000000;*/
@@ -110,7 +110,7 @@ body, html {
     padding-bottom: 3vh;
     /*font-size: bold 50vw;*/
     width: 12vw;
-    height: 10vh;
+    height: 9vh;
     border-bottom-radius: 50%;
     border: bold 2px;
     border-right:bold 1vw;
@@ -159,7 +159,7 @@ body, html {
     position: fixed;
     display: inline;
     width: 100vw;
-    height: 10vh;
+    eight: 10vh;
     adding-left: 20vw;
     adding-top: 1.5vh;
     adding-right: 20vw;
@@ -995,6 +995,7 @@ right {
     cursor: pointer;
     adding: 1.3vw 1vh;
     width: 20vw;
+    height: none;9vh;
  
   }
   .active{
@@ -1022,7 +1023,7 @@ right {
     color: black;
     border-radius: 0%;
     height: 15vw;
-    font-size: 18px;2.5vh;
+    font-size: 16px;2.5vh;
     text-align: center;
   }
   
