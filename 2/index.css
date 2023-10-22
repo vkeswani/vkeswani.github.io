@@ -371,7 +371,7 @@ top_part {
   ackground: solid;
   ackground-color:rgba(0, 0, 0, 0.1);
   backgroun: rgb(255, 232, 232);rgba(250, 138, 162, 0.1);rgba(255, 255, 255, 1);linear-gradient(0deg,rgba(255, 255, 255, 1),rgb(200, 200, 200));
-  ackground: linear-gradient(0deg, rgb(255, 220, 220), rgba(255, 255, 255, 1));
+  background: white;linear-gradient(0deg, rgb(255, 220, 220), rgba(255, 255, 255, 1));
   /* background: linear-gradient(0deg, rgba(255, 255, 255, 1), rgb(255, 240, 240)); */
   ox-shadow: rgba(255, 255, 255, 0.7);
   /*border-width: 20px;
@@ -1066,7 +1066,7 @@ right {
     line-height: min(4vh,8vw);
   }
   #bio h1 {
-    font-size: min(2.2vh,20px);
+    font-size: min(2.5vh,20px);
 
   }
   .navbar {
