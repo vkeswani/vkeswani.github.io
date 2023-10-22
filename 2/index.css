@@ -538,7 +538,7 @@ bioCV {
     min(10vh,10vw);
     adding-top: 10vh;min(10vh,10vw);
 
-    font-size: min(2.3vh,2.3vw);
+    font-size: 12pt;min(2vh,2.3vw);
     ont-family: system-ui;
     font-family: var(--font);
     line-height: min(4vh,4vw);
