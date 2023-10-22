@@ -69,7 +69,7 @@ body, html {
     font-family: Tahoma, sans-serif;
     font-weight: bod;
     min(normal,normal);
-    font-size: min(4vh,4vw);
+    font-size: min(3vh,3vw);
     ackground: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(255, 44, 90, 0.5));transparent;
     background: linear-gradient(0deg,rgba(110, 110, 110, 1),rgb(250, 138, 162));transparent;
     text-shadow: 0px 0px 3px rgba(245, 241, 242, 0.6);
@@ -200,8 +200,8 @@ ody {
   height: 100vh;
   padding-top: 5vw;
   padding-bottom: 5vw;
-  padding-right: 30vw;
-  padding-left: 30vw;
+  adding-right: 20vw;
+  adding-left: 20vw;
   text-shadow: none;
   to: 25%;
   width: 100%;
@@ -359,26 +359,29 @@ top_part {
 .foot {
   position: fixed;
   ight: 0;
-  to: 0;
+  op: 88.5vh;
   bottom: 0;
   lign-self: center;
   eft:0;
   width: 100vw;
   padding-lft: 40vw;
-  eight: 10vh;
-  padding-top: 0.5vh rgba(250, 138, 162, 0.1);
-  padding-bottom: 0.5vh;
+  eight: 11.5vh;
+  adding-top: 10vh rgba(250, 138, 162, 0.1);
+  adding-bottom: 0.0vh;
   ackground: solid;
   ackground-color:rgba(0, 0, 0, 0.1);
   backgroun: rgb(255, 232, 232);rgba(250, 138, 162, 0.1);rgba(255, 255, 255, 1);linear-gradient(0deg,rgba(255, 255, 255, 1),rgb(200, 200, 200));
   ackground: linear-gradient(0deg, rgb(255, 220, 220), rgba(255, 255, 255, 1));
   /* background: linear-gradient(0deg, rgba(255, 255, 255, 1), rgb(255, 240, 240)); */
-  box-shadow: rgba(255, 255, 255, 0.7);
+  ox-shadow: rgba(255, 255, 255, 0.7);
   /*border-width: 20px;
   
   align-content: center;
   align-items: center;
   align-self: center;*/
+}
+#arrow{
+  padding-left: 15vw;
 }
 .foot #leftb {
   font-size: min(6vh, 6vw);
@@ -405,6 +408,8 @@ top_part {
     rgb(255, 255, 255);
     font-size:min(4vh,5vw);
     padding:max(0.4vh, 0.4vw) max(1.1vh,1.1vw);
+    
+    margin: 0vw;
     border-radius:60%;
     background:linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(255, 44, 90, 0.5));
     shadow: 0px 0px 3px rgba(255,44,90,0.6);
@@ -940,12 +945,12 @@ right {
     verflow-y: scroll;
 }
 } */
-@media (min-width: 1000px) and (max-width: 1200px) {
+@media (min-width: 1000px) and (max-width: 1300px) {
   .navbar i {
     display: none;
   }
   #bio {
-    font-size: min(2.5vh, 15px);
+    font-siz: min(2vh, 1px);
   }
 }
 
@@ -1001,7 +1006,7 @@ right {
     overflow-y: scroll;
     padding-left: 5vw; 
     padding-right: 5vw; 
-    font-size: min(2.5vh,15px);
+    font-size: min(2vh,15px);
     font-family: system-ui;
     line-height: min(4vh,4vw);
   }
@@ -1022,6 +1027,9 @@ right {
 @media (max-width: 800px) {
   .navbar {
     display: none;
+  }
+  #arrow {
+    padding-left: 15vw;
   }
   .mobile {
     
@@ -1053,12 +1061,12 @@ right {
     overflow-y: scroll;
     padding-left: 5vw; 
     padding-right: 5vw; 
-    font-size: min(2.5vh,15px);
+    font-size: min(2vh,15px);
     font-family: system-ui;
     line-height: min(4vh,8vw);
   }
   #bio h1 {
-    font-size: min(4vh,25px);
+    font-size: min(2.2vh,20px);
 
   }
   .navbar {
@@ -1068,7 +1076,7 @@ right {
     
   }
   .tablink1 {
-    font-size: 25px;
+    font-size: 15px;
   }
   #bio .flex {
     display: flex;
@@ -1090,7 +1098,14 @@ right {
   }
 }
 
-
+@media (max-width: 300px) {
+  .social {
+    margin: -2vw;
+  }
+  .social1 {
+    margin: -2vw;
+  }
+}
 /* Style the buttons that are used to open and close the accordion panel */
 bio4 {
     idth:min(25vw,120vw);
