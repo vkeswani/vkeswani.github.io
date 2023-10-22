@@ -89,11 +89,11 @@ body, html {
     text-shadow: 0px 0px 8px #000000;*/
   }
   .tablink1 {
-    ont-family: "Times-Roman", sans-serif;
-    ont-family: Tahoma, sans-serif;
-    font-weight: bold;
+    ont-family: "Times-Roman", serif;
+    font-family: Tahoma, sans-serif;
+    ont-weight: bold;
     min(normal,normal);
-    font-size: min(2.5vh,2.5vw);
+    font-size:16px; min(2.5vh,2.5vw);
     ackground: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(255, 44, 90, 0.5));transparent;
     ackground: linear-gradient(0deg,rgba(110, 110, 110, 1),rgb(250, 138, 162));transparent;
     background: linear-gradient(0deg,rgba(110, 110, 110, 1),rgb(250, 138, 162));transparent;
@@ -406,7 +406,7 @@ top_part {
 .social {
     color:black;
     rgb(255, 255, 255);
-    font-size:min(4vh,5vw);
+    font-size:25px;min(4vh,5vw);
     padding:max(0.4vh, 0.4vw) max(1.1vh,1.1vw);
     
     margin: 0vw;
@@ -421,7 +421,7 @@ top_part {
 .social1 {
   color:black;
   rgb(255, 255, 255);
-  font-size:min(4vh,5vw);
+  font-size:25px;min(4vh,5vw);
   padding:max(0.4vh, 0.4vw) max(0.8vh, 0.8vw);
   border-radius:60%;
   background:linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(255, 44, 90, 0.5));
@@ -538,7 +538,7 @@ bioCV {
     min(10vh,10vw);
     adding-top: 10vh;min(10vh,10vw);
 
-    font-size: 12px;min(2vh,2.3vw);
+    font-size: 15px;min(2vh,2.3vw);
     ont-family: system-ui;
     font-family: var(--font);
     line-height: min(4vh,4vw);
@@ -546,7 +546,7 @@ bioCV {
 }
 #bio h1 {
   text-align: center;
-  font-size:min(2.5vh,2.5vw);
+  font-size:17px;min(2.5vh,2.5vw);
   font-family: Tahoma, sans-serif;
   fnt-family: var(--font);
 
@@ -566,7 +566,7 @@ bioCV {
   color: black;
   border-radius: 0%;
   height: 15vw;
-  font-size: 1.2vw; max(1.5vw, 40px);
+  font-size: 18px;1.2vw; max(1.5vw, 40px);
   text-align: center;
 }
 bio2 {
@@ -945,17 +945,20 @@ right {
     verflow-y: scroll;
 }
 } */
-@media (min-width: 1000px) and (max-width: 1300px) {
+/* @media (min-width: 1050px) and (max-width: 1300px) {
   .navbar i {
     display: none;
   }
   #bio {
     font-siz: min(2vh, 1px);
   }
-}
+  .tablink1 {
+    font-size: 16px;
+  }
+} */
 
 /* The actual content */
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
   .name {
     display: none;
     padding: 0vw 0vh;
@@ -978,8 +981,8 @@ right {
     text-align: center !important;
     vertical-align: middle;
     ont-family: Tahoma, sans-serif;
-    font-weight: bold;
-    font-size: min(2.5vh,2.5vw);
+    ont-weight: bold;
+    font-size: 16px;min(2.5vh,2.5vw);
     ackground: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(255, 44, 90, 0.5));transparent;
     background: linear-gradient(0deg,rgba(110, 110, 110, 1),rgb(250, 138, 162));transparent;
     ext-shadow: 0px 0px 3px rgba(97, 94, 95, 0.6);
@@ -1006,7 +1009,7 @@ right {
     overflow-y: scroll;
     padding-left: 5vw; 
     padding-right: 5vw; 
-    font-size: min(2vh,15px);
+    font-size: 12px;min(2vh,15px);
     font-family: system-ui;
     line-height: min(4vh,4vw);
   }
@@ -1025,6 +1028,12 @@ right {
   
 } 
 @media (max-width: 800px) {
+  .social {
+    font-size: 20px;
+  }
+  .social1 {
+    font-size: 20px;
+  }
   .navbar {
     display: none;
   }
@@ -1036,7 +1045,7 @@ right {
     position: fixed;
     display: inline;
     font-weight: bold;
-    font-size: 18pt;min(3vh,25pt);
+    font-size: 25px;min(3vh,25pt);
     background: linear-gradient(0deg,rgba(110, 110, 110, 1),rgb(250, 138, 162));
     text-shadow: rgb(231, 214, 214);
                  
@@ -1061,12 +1070,12 @@ right {
     overflow-y: scroll;
     padding-left: 5vw; 
     padding-right: 5vw; 
-    font-size: min(2vh,15px);
+    font-size: 12px;min(2vh,15px);
     font-family: system-ui;
     line-height: min(4vh,8vw);
   }
   #bio h1 {
-    font-size: min(2.5vh,20px);
+    font-size: 15px;min(2.5vh,20px);
 
   }
   .navbar {
@@ -1099,12 +1108,15 @@ right {
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   .social {
-    margin: -2vw;
+    margin: -1vw;
+    font-size: 16px;
   }
   .social1 {
-    margin: -2vw;
+    margin: -1vw;
+    font-size: 16px;
+
   }
 }
 /* Style the buttons that are used to open and close the accordion panel */
