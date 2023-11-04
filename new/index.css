@@ -15,13 +15,20 @@ body, html {
     --rgba: rgba(255,44, 90, 0.7); 
     /*rightImage, work h1, container after,accordian,accordian1*/
   }
+  :root {
+    --font: "Calibri", sans-serif;
+    -grad: rgba(160, 0, 60, 0.9);
+    --back: rgb(160, 0, 60); linear-gradient(180deg, rgb(65, 58, 58) 50%, rgb(160, 0, 60) 50%);rgb(150, 150, 150);
+    -back1: rgb(250, 233, 236);
+    --back1: white;rgb(245, 245, 245);rgb(253, 239, 219);
+  }
 
   .tabcontent {
     olor:rgb(0,0,0);
      /*padding: 20px 20px;*/
      padding-top: 10vh;
      height: 90vh;
-     background-color: white;rgb(255, 240, 240);
+     background-color: var(--back1);rgb(253, 239, 219);rgb(255, 240, 240);
      /* background-color: white; */
      /* background: linear-gradient(0deg,rgba(255,255,255,1),rgba(255, 230, 230, 1)); */
      adding-bottom: 10vh;
@@ -66,9 +73,9 @@ body, html {
     font-family: Tahoma, sans-serif;
     font-weight: bod;
     min(normal,normal);
-    font-size: min(5vh,5vw);
+    font-size: min(4vh,4vw);
     ackground: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(255, 44, 90, 0.5));transparent;
-    background: linear-gradient(0deg,rgba(110, 110, 110, 1),rgb(250, 138, 162));transparent;
+    background: var(--back);rgb(160, 160, 160);rgb(250, 130, 170);linear-gradient(0deg,rgba(110, 110, 110, 1),rgb(250, 138, 162));transparent;
     text-shadow: 0px 0px 3px rgba(245, 241, 242, 0.6);
     ext-shadow: rgb(231, 214, 214);
                  
@@ -80,26 +87,27 @@ body, html {
     padding: 0.8vw 1vh;
     /*font-size: bold 50vw;*/
     width: 20vw;
-    height: 10vh;
+    height: 9vh;
     /*border: 0.2vw solid rgba(0,255,0,0.7);
     text-decoration-color: black;
     text-shadow: 0px 0px 8px #000000;*/
   }
   .tablink1 {
-    /*font-family: Georgia, serif;*/
-    ont-family: Tahoma, sans-serif;
-    font-weight: bold;
+    ont-family: "Times-Roman", serif;
+    font-family: Tahoma, sans-serif;
+    ont-weight: bold;
     min(normal,normal);
-    font-size: 2.4vh;min(2.5vh,2.5vw);
+    font-size:16px; min(2.5vh,2.5vw);
     ackground: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(255, 44, 90, 0.5));transparent;
     ackground: linear-gradient(0deg,rgba(110, 110, 110, 1),rgb(250, 138, 162));transparent;
-    background: linear-gradient(0deg,rgba(110, 110, 110, 1),rgb(250, 138, 162));transparent;
-    ext-shadow: 0px 0px 3px rgba(97, 94, 95, 0.6);
-    text-shadow: rgb(231, 214, 214);
+    ackground: linear-gradient(0deg,rgba(110, 110, 110, 1),rgb(250, 138, 162));transparent;
+    background: var(--back);rgb(100, 100, 100);rgb(250, 130, 170);
+    text-shadow: 0px 0px 3px black; rgba(97, 94, 95, 0.6);
+    ext-shadow: rgb(231, 214, 214);
                  
     -webkit-text-stroke-width: 0.0vw;
               -webkit-text-stroke-color: black;
-    color: black;
+    color: var(--back1);white;black;
     float: left;
     cursor: pointer;
     adding: 1.3vw 1vh;
@@ -107,7 +115,7 @@ body, html {
     padding-bottom: 3vh;
     /*font-size: bold 50vw;*/
     width: 12vw;
-    height: 10vh;
+    height: 9vh;
     border-bottom-radius: 50%;
     border: bold 2px;
     border-right:bold 1vw;
@@ -122,18 +130,23 @@ body, html {
     color: rgb(250, 138, 162);
   }
   .tablink1:hover {
+    olor: black;gainsboro;
     paddin: 1vw;
-    color: white;
-    
+    olor: rgb(160, 0, 60);black;rgb(212, 211, 211);
     ext-shadow: 0px 0px 3px rgba(255,44,90,0.6);
-    text-shadow: 0px 0px 4px rgba(0,0,0,1);
+    text-shadow: 0px 0px 1px white; black; rgb(158, 158, 158);
+  }
+  .active{
+    color: white;
+    text-shadow: 0px 0px 1px white; black;
+    background:transparen
   }
   #key {
     width: 100%;
     padding-left: 10v;
     font-weight: bold;
     text-align: center;
-    background: linear-gradient(90deg,rgba(100, 100, 100, 1),rgb(250, 110, 130));
+    background: rgba(160, 0, 60);rgb(60,60,60);black;linear-gradient(90deg,rgba(100, 100, 100, 1),rgb(250, 110, 130));
 			-webkit-text-fill-color: transparent;
 			-webkit-background-clip: text;
   }
@@ -147,16 +160,11 @@ body, html {
 			-webkit-text-fill-color: transparent;
 			-webkit-background-clip: text;
   }
-  .active{
-    color: white;
-    text-shadow: 0px 0px 3px black;
-    background:transparen
-  }
   .navbar {
     position: fixed;
     display: inline;
     width: 100vw;
-    height: 10vh;
+    eight: 10vh;
     adding-left: 20vw;
     adding-top: 1.5vh;
     adding-right: 20vw;
@@ -197,8 +205,8 @@ ody {
   height: 100vh;
   padding-top: 5vw;
   padding-bottom: 5vw;
-  padding-right: 30vw;
-  padding-left: 30vw;
+  adding-right: 20vw;
+  adding-left: 20vw;
   text-shadow: none;
   to: 25%;
   width: 100%;
@@ -356,29 +364,32 @@ top_part {
 .foot {
   position: fixed;
   ight: 0;
-  to: 0;
+  op: 88.5vh;
   bottom: 0;
   lign-self: center;
   eft:0;
   width: 100vw;
   padding-lft: 40vw;
-  eight: 10vh;
-  padding-top: 0.5vh rgba(250, 138, 162, 0.1);
-  padding-bottom: 0.5vh;
+  eight: 11.5vh;
+  adding-top: 10vh rgba(250, 138, 162, 0.1);
+  adding-bottom: 0.0vh;
   ackground: solid;
   ackground-color:rgba(0, 0, 0, 0.1);
   backgroun: rgb(255, 232, 232);rgba(250, 138, 162, 0.1);rgba(255, 255, 255, 1);linear-gradient(0deg,rgba(255, 255, 255, 1),rgb(200, 200, 200));
-  background: linear-gradient(0deg, rgb(255, 220, 220), rgba(255, 255, 255, 1));
+  background: var(--back1);white;linear-gradient(0deg, rgb(255, 220, 220), rgba(255, 255, 255, 1));
   /* background: linear-gradient(0deg, rgba(255, 255, 255, 1), rgb(255, 240, 240)); */
-  box-shadow: rgba(255, 255, 255, 0.7);
+  ox-shadow: rgba(255, 255, 255, 0.7);
   /*border-width: 20px;
   
   align-content: center;
   align-items: center;
   align-self: center;*/
 }
+#arrow{
+  padding-left: 15vw;
+}
 .foot #leftb {
-  font-size: min(6vh, 6vw);
+  font-size: 35px;min(6vh, 8vw);
   background-color: transparent;
   border: none;
   text-align: left;
@@ -388,7 +399,7 @@ top_part {
   text-shadow: 0px 0px 8px rgba(0,0,0,1);
 }
 .foot #rightb {
-  font-size: min(6vh, 6vw);
+  font-size: 35px;min(6vh, 8vw);
   background-color: transparent;
   border: none;
   text-align: right;
@@ -398,25 +409,28 @@ top_part {
   text-shadow: 0px 0px 8px rgba(0,0,0,1);
 }
 .social {
-    color:black;
+    color:var(--back1);black;
     rgb(255, 255, 255);
-    font-size:min(4vh,5vw);
+    font-size:25px;min(4vh,5vw);
     padding:max(0.4vh, 0.4vw) max(1.1vh,1.1vw);
+    
+    margin: 0vw;
     border-radius:60%;
-    background:linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(255, 44, 90, 0.5));
-    shadow: 0px 0px 3px rgba(255,44,90,0.6);
+    background: var(--back);rgb(160, 160, 160);rgb(250, 130, 170);linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(255, 44, 90, 0.5));
+    text-shadow: 0px 0px 3px black; rgba(255,44,90,0.6);
     transitio:0.4s ease-in-out;
     bordr: 0.2vw solid black;
     argin-bottom:6vw;
     lign-self: left;
 }
 .social1 {
-  color:black;
+  color:var(--back1);black;
   rgb(255, 255, 255);
-  font-size:min(4vh,5vw);
+  font-size:25px;min(4vh,5vw);
   padding:max(0.4vh, 0.4vw) max(0.8vh, 0.8vw);
   border-radius:60%;
-  background:linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(255, 44, 90, 0.5));
+  background:var(--back);rgb(200, 200, 200);rgb(250,130,170);linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(255, 44, 90, 0.5));
+  text-shadow: 0px 0px 3px black;
   transitio:0.4s ease-in-out;
   bordr: 0.2vw solid black;
   argin-bottom:6vw;
@@ -424,18 +438,18 @@ top_part {
 }
 .social:hover { 
     cursor: pointer;
-    color:rgba(255, 255, 255, 1);
-    text-shadow: 0px 0px 4px rgba(0,0,0,1);
+    olor:rgba(255, 255, 255, 1);
+    text-shadow: 0px 0px 2px white; rgba(0,0,0,1);
     #fff;
     ackground:white;
     rgb(0, 0, 0);
-    order: 0.2vw solid black;
+    rder: 0.2vw solid black;
     /*box-shadow:0px 10px 30px rgba(0, 50, 0,0.8);*/
 }
 .social1:hover { 
   cursor: pointer;
-  color:rgba(255, 255, 255, 1);
-  text-shadow: 0px 0px 4px rgba(0,0,0,1);
+  olor:rgb(200, 200, 200);
+  text-shadow: 0px 0px 2px white; rgba(0,0,0,1);
   #fff;
   ackground:white;
   rgb(0, 0, 0);
@@ -530,19 +544,22 @@ bioCV {
     min(10vh,10vw);
     adding-top: 10vh;min(10vh,10vw);
 
-    font-size: min(2.5vh,2.5vw);
-    font-family: system-ui;
+    font-size: 15px;min(2vh,2.3vw);
+    ont-family: system-ui;
+    font-family: var(--font);
     line-height: min(4vh,4vw);
-    padding-bottom: 2vh;
+    padding-bottom: 4vh;
 }
 #bio h1 {
   text-align: center;
-  font-size:min(4vh,4vw);
-  font-family: system-ui;Tahoma, sans-serif;
+  font-size:17px;min(2.5vh,2.5vw);
+  font-family: Tahoma, sans-serif;
+  fnt-family: var(--font);
+
   color: black;
   word-wrap:break-word;
-  text-shadow: 2px 2px 2px rgba(255, 44, 90, 0.5);
-  padding-top: min(2vh, 2vw);
+  ext-shadow: 1px 1px 1px rgba(255, 44, 90, 0.5);
+  padding-top: min(2vh, 1vw);
   ine-height: max(4vh, 4vw);
 }
 #bio button{
@@ -551,11 +568,11 @@ bioCV {
   margin-right: 1.5vw;
   margin-bottom: 3vw;
   lign-self: center;
-  box-shadow: 0.5vw 0.5vw 0.5vw rgba(0, 0, 0, 0.5);
+  box-shadow: 0.4vw 0.4vw 0.4vw rgba(0, 0, 0, 0.5);
   color: black;
   border-radius: 0%;
   height: 15vw;
-  font-size: 1.5vw; max(1.5vw, 40px);
+  font-size: 18px;1.2vw; max(1.5vw, 40px);
   text-align: center;
 }
 bio2 {
@@ -934,17 +951,20 @@ right {
     verflow-y: scroll;
 }
 } */
-@media (min-width: 1000px) and (max-width: 1200px) {
+/* @media (min-width: 1050px) and (max-width: 1300px) {
   .navbar i {
     display: none;
   }
   #bio {
-    font-size: min(2.5vh, 15px);
+    font-siz: min(2vh, 1px);
   }
-}
+  .tablink1 {
+    font-size: 16px;
+  }
+} */
 
 /* The actual content */
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
   .name {
     display: none;
     padding: 0vw 0vh;
@@ -967,25 +987,26 @@ right {
     text-align: center !important;
     vertical-align: middle;
     ont-family: Tahoma, sans-serif;
-    font-weight: bold;
-    font-size: min(2.5vh,2.5vw);
+    ont-weight: bold;
+    font-size: 16px;min(2.5vh,2.5vw);
     ackground: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(255, 44, 90, 0.5));transparent;
-    background: linear-gradient(0deg,rgba(110, 110, 110, 1),rgb(250, 138, 162));transparent;
+    ackground: linear-gradient(0deg,rgba(110, 110, 110, 1),rgb(250, 138, 162));transparent;
     ext-shadow: 0px 0px 3px rgba(97, 94, 95, 0.6);
     ext-shadow: rgb(231, 214, 214);
                  
     -webkit-text-stroke-width: 0.0vw;
               -webkit-text-stroke-color: black;
-    color: black;
+    olor: black;
     float: left;
     cursor: pointer;
     adding: 1.3vw 1vh;
     width: 20vw;
+    height: none;9vh;
  
   }
   .active{
-    color: white;
-    text-shadow: 0px 0px 3px black;
+    olor: white;
+    ext-shadow: 0px 0px 3px black;
     background:transparen
   }
   #bio {
@@ -995,7 +1016,7 @@ right {
     overflow-y: scroll;
     padding-left: 5vw; 
     padding-right: 5vw; 
-    font-size: min(2.5vh,15px);
+    font-size: 14px;min(2vh,15px);
     font-family: system-ui;
     line-height: min(4vh,4vw);
   }
@@ -1004,31 +1025,47 @@ right {
     margin-right: 3vw;
     margin-bottom: 3vw;
     lign-self: center;
-    box-shadow: 0.5vw 0.5vw 0.5vw rgba(0, 0, 0, 0.5);
-    color: black;
+    ox-shadow: 0.5vw 0.5vw 0.5vw rgba(0, 0, 0, 0.5);
+    olor: black;
     border-radius: 0%;
     height: 15vw;
-    font-size: 2.5vh;
+    font-size: 16px;2.5vh;
     text-align: center;
   }
   
 } 
 @media (max-width: 800px) {
+  .social {
+    font-size: 20px;
+  }
+  .social1 {
+    font-size: 20px;
+  }
+  .foot #leftb {
+    font-size: 25px;
+  }
+  .foot #rightb {
+    font-size: 25px;
+  }
   .navbar {
     display: none;
+  }
+  #arrow {
+    padding-left: 15vw;
   }
   .mobile {
     
     position: fixed;
     display: inline;
     font-weight: bold;
-    font-size: min(4vh,25pt);
-    background: linear-gradient(0deg,rgba(110, 110, 110, 1),rgb(250, 138, 162));
+    font-size: 25px;min(3vh,25pt);
+    background: var(--back);linear-gradient(0deg,rgba(110, 110, 110, 1),rgb(250, 138, 162));
     text-shadow: rgb(231, 214, 214);
                  
     -webkit-text-stroke-width: 0.0vw;
               -webkit-text-stroke-color: black;
-    color: black;
+    color: white;black;
+    text-shadow: 0px 0px 3px black;
     float: left;
     padding: 1.3vw 1vh;
     padding-left: 5vw;
@@ -1047,12 +1084,12 @@ right {
     overflow-y: scroll;
     padding-left: 5vw; 
     padding-right: 5vw; 
-    font-size: min(2.5vh,15px);
+    font-size: 12px;min(2vh,15px);
     font-family: system-ui;
     line-height: min(4vh,8vw);
   }
   #bio h1 {
-    font-size: min(4vh,25px);
+    font-size: 15px;min(2.5vh,20px);
 
   }
   .navbar {
@@ -1062,7 +1099,7 @@ right {
     
   }
   .tablink1 {
-    font-size: 25px;
+    font-size: 15px;
   }
   #bio .flex {
     display: flex;
@@ -1071,6 +1108,7 @@ right {
   }
   #bio button {
     width: 90vw;
+    font-size: 15px;min(4vw, 2.5vh);
   }
   .overlay-content ul a{
     font-size: 15px;
@@ -1084,7 +1122,17 @@ right {
   }
 }
 
+@media (max-width: 350px) {
+  .social {
+    margin: -1vw;
+    font-size: 16px;
+  }
+  .social1 {
+    margin: -1vw;
+    font-size: 16px;
 
+  }
+}
 /* Style the buttons that are used to open and close the accordion panel */
 bio4 {
     idth:min(25vw,120vw);
@@ -1196,9 +1244,8 @@ bio5 table tr{
 }
 .accordion {
   background-color: white;
-  font-family: system-ui;Tahoma, sans-serif;
+  font-family: var(--font);
   font-weight: bold;
-  font-size: max(20px,4vw);
   cursor: pointer;
   adding: min(0.8vh,0.4vw);
   width: 16.5vw;
